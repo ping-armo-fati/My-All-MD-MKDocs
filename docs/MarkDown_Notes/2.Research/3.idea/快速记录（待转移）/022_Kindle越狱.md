@@ -1,0 +1,31 @@
+Kindle越狱
+
+2023年11月3日
+
+17:15
+
+ 
+
+-   [https://zhuanlan.zhihu.com/p/572300187?utm\_id=0]{.underline}
+
+-   [https://mp.weixin.qq.com/s?\_\_biz=MzUxOTkyNzE1MQ==&mid=2247495762&idx=1&sn=23b3d3ef8c3da46c1abebaca3679f774&chksm=f9f09452ce871d4444ce9e164d39fbeb86b3dc848cc3f6a1eafd9acf7a3173dc5b96eb323d09&scene=21\#wechat\_redirect]{.underline}
+
+-   [https://bookfere.com/post/871.html]{.underline}
+
+-   [https://zhuanlan.zhihu.com/p/572300187?utm\_id=0]{.underline}
+
+-   [https://bookfere.com/post/871.html]{.underline}
+
+-   [https://bookfere.com/post/703.html/comment-page-2]{.underline}
+
+-   [https://zhuanlan.zhihu.com/p/507008979]{.underline}
+
+-   [https://bookfere.com/post/970.html]{.underline}
+
+-   [https://item.taobao.com/item.htm?spm=a21n57.1.0.0.1c9b523clAtF7I&id=691982169388&ns=1&abbucket=10\#detail]{.underline}
+
+-   [https://baijiahao.baidu.com/s?id=1781173653822368571&wfr=spider&for=pc3]{.underline}
+
+-   [https://www.bilibili.com/video/BV1414y1n79F/?vd\_source=7bbb495bd3eb17d05e0b1fb561e8f987]{.underline}
+
+-   [https://www.bilibili.com/video/BV1414y1n79F/?vd\_source=7bbb495bd3eb17d05e0b1fb561e8f987]{.underline}

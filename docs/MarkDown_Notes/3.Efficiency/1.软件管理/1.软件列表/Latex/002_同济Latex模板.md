@@ -1,0 +1,71 @@
+同济Latex模板
+
+2023年5月4日
+
+16:48
+
+-   关于中文字体的问题
+
+    -   [https://zhuanlan.zhihu.com/p/52422763]{.underline}
+
+    -   字体设置：注释掉Newtx那两行即可
+
+    -   [https://blog.csdn.net/abnerTorch/article/details/123398774]{.underline}
+
+    -   [https://blog.csdn.net/king\_ham/article/details/127797370]{.underline}
+
+-   环境配置
+
+    -   [https://blog.csdn.net/BlueBlueSkyZ/article/details/120154959]{.underline}
+
+>  
+
+-   LaTex期刊模板下载与使用
+
+    -   [https://blog.csdn.net/MacWx/article/details/128414122]{.underline}
+
+-   代码段颜色
+
+    -   [https://blog.csdn.net/qysh123/article/details/120985107]{.underline}
+
+-   报错综合
+
+    -   [https://blog.csdn.net/RZLu2000/article/details/122570686]{.underline}
+
+-   中文路径问题
+
+    -   [https://blog.csdn.net/qq\_41554005/article/details/120698428]{.underline}
+
+-   [https://github.com/marquistj13/TongjiThesis]{.underline}
+
+-   [https://github.com/TJ-CSCCG/tongji-undergrad-thesis]{.underline}
+
+-   [https://github.com/yumuzi/TONGJITHESIS]{.underline}
+
+-   [https://zhuanlan.zhihu.com/p/64900260]{.underline}
+
+-   超全中文字体的设置
+
+    -   [https://zhuanlan.zhihu.com/p/538459335]{.underline}
+
+-   综合教程和报错指南
+
+    -   [https://blog.csdn.net/qq\_47925836/article/details/115032179]{.underline}
+
+<!-- -->
+
+-   美赛教学
+
+    -   [https://zhuanlan.zhihu.com/p/459440543]{.underline}
+
+<!-- -->
+
+-   手动安装宏包
+
+    -   [https://blog.csdn.net/a493823882/article/details/78634537]{.underline}
+
+-   制作PPT
+
+    -   [https://blog.csdn.net/m0\_52531644/article/details/129398856]{.underline}
+
+    -    

@@ -1,0 +1,8 @@
+https://www.bilibili.com/video/BV1YT4y1Q7xx/?spm_i_from=333.788.recommend_more_video.0&vd_source=6e01dedcf408a17a20fd6d828fe9dff8
+
+[全网最好的《Notion》教程！ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/628241126)
+
+[Notion使用教程：从入门到精通 - 知乎 (zhihu.com)](https://www.zhihu.com/column/c_1619266608672780288)
+
+[Notion使用详解一基础教程_notion教程-CSDN博客](https://blog.csdn.net/u014162133/article/details/109724200)
+

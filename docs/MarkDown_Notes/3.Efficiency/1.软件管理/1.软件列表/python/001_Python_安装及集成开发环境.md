@@ -1,0 +1,37 @@
+Python 安装及集成开发环境
+
+2023年4月19日
+
+19:30
+
+ 
+
+下载网页
+
+[https://www.python.org/downloads/windows/]{.underline}
+
+安装包名字：python-2.7.1.amd64
+
+Python 文件的源码存放地址：
+
+F:\\PycharmProjects\\pythonProject
+
+ 
+
+Python3的安装位置：
+
+C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python310
+
+Python2.7的安装位置：
+
+D:\\Program Files (x86)\\python
+
+ 
+
+最新版本的 Pycharm（例如 2021.3 及更高版本）
+
+不再支持 Python 2.7。
+
+ 
+
+ 

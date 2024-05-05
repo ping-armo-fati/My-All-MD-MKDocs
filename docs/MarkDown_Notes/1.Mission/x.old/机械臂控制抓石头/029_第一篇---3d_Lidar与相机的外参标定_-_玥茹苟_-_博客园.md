@@ -1,0 +1,77 @@
+第一篇\-\--3d\_Lidar与相机的外参标定 - 玥茹苟 - 博客园
+
+星期四, 十二月 15, 2022
+
+12:43 下午
+
+ 
+
+已剪辑自: [https://www.cnblogs.com/lovebay/p/14129152.html]{.underline}
+
+**3d\_Lidar与相机的外参标定**
+
+#### *1、3D机械雷达标定*
+
+##### 1.1 [zhixy/Laser-Camera-Calibration-Toolbox]{.underline}
+
+-   matlab版本
+
+-   需要手动缩放，并选择落在棋盘格上的激光点
+
+-   采集一次数据就能完成标定，一张图片，一帧激光数据
+
+##### 1.2 [swyphcosmo/ros-camera-lidar-calibration]{.underline}
+
+-   手动选择6对匹配点（激光雷达坐标系的3D点和图像坐标系下的2D点）进行标定
+
+##### 1.3 [ethz-asl/lidar\_align]{.underline}
+
+-   for 3D lidar and a 6-dof pose sensor（如，MCS），不需要标定板
+
+-   需要满足非平面运动，运动要求包含大量的旋转和平移运动
+
+-   对于地面车辆标定，将造成高度方向的外参不可观测
+
+##### 1.4 [yuzhou42/camera-laser-calibration]{.underline}
+
+-   利用标定板的几何性质来进行图像点与激光点的匹配
+
+-   图像中心，使用的是一个apriltag，计算四个角点的像素坐标系，再利用两条直线的交点，得到中心点的坐标
+
+-   激光点的标定板上的中心位置，先使用PCL分割平面，再计算平面上所有激光点位置的平均值，作为中心点坐标
+
+-   每采集一次数据就得到一对匹配点，所以多次移动标定板的位置，得到尽可能多的匹配点，再通过PnP得到二者的外参
+
+##### 1.5 [autoware]{.underline}
+
+##### 1.6 [APRIL-ZJU/lidar\_IMU\_calib]{.underline}
+
+-   用于标定IMU与lidar的外参，通过IMU进行中转，即可得到相机与雷达的外参
+
+-   参考论文：Targetless Calibration of LiDAR-IMU System Based on Continuous-time Batch Estimation
+
+##### 1.7 [but\_calibration\_camera\_velodyne]{.underline}
+
+-   最低32线激光雷达，以便算法检测3D marker
+
+1.8 **[lidar\_camera\_calibration]{.underline} **
+
+[https://github.com/ankitdhall/lidar\_camera\_calibration.git]{.underline}
+
+[https://blog.csdn.net/zhanghm1995/article/details/87802656]{.underline} 
+
+ 
+
+#### *2、3D固态激光雷达*
+
+##### 2.1 [Livox-SDK/Livox\_automatic\_calibration]{.underline}
+
+ 
+
+ 
+
+参考：
+
+[https://www.cnblogs.com/CV-life/p/11426028.html]{.underline}  
+
+[http://mapir.isa.uma.es/mapirwebsite/index.php/computer-vision-menu-topic/190-topic-calibration.html]{.underline}   
