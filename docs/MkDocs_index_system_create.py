@@ -28,7 +28,7 @@ def tribe_idx_build(top_dir):
                         f.write("****\n")
                         f.write("****\n")
                         for file in tribe_dir.iterdir():
-                            if file != file_path:
+                            if file.suffix == '.md':
                                 # 去掉文件名中的数字和点的前缀
                                 file_title = file.stem.split('.', 1)[-1]
                                 f.write(f"  - [{file_title}]({file.stem}{file.suffix})\n")
