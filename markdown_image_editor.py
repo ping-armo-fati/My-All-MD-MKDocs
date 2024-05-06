@@ -12,7 +12,7 @@ def process_markdown_files(root_dir_input, assets_path_input):
     print(os.path.isdir(root_dir_input))
     for root, dirs, files in os.walk(root_dir_input):
         for file in files:
-            if file.endswith('.md'):
+            if file.endswith('.md') and file != 'index.md':
                 print("find the " + file)
                 full_path = os.path.join(root, file)
                 with open(full_path, 'r', encoding='utf-8') as file_con:
@@ -70,7 +70,7 @@ def rename_image_files_by_alt_text(root_dir_input, assets_path_input):
     img_counter = 1
     for root, dirs, files in os.walk(root_dir_input):
         for file in files:
-            if file.endswith('.md'):
+            if file.endswith('.md') and file != 'index.md':
                 print("find the " + file)
                 full_path = os.path.join(root, file)
                 file_name = os.path.splitext(file)[0]
