@@ -2,7 +2,8 @@ site_name: All MarkDown Notes
 
 nav:
   - Home: 'index.md'
-  - Bullet: 'MarkDown_Notes/0.Bullet/index.md'
+  - Bullet:
+    - Contents: 'MarkDown_Notes/0.Bullet/index.md'
   - Mission: 'MarkDown_Notes/1.Mission/index.md'
   - Research: 'MarkDown_Notes/2.Research/index.md'
   - Efficiency: 'MarkDown_Notes/3.Efficiency/index.md'
