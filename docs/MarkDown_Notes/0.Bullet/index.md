@@ -1,11 +1,12 @@
 # Bullet Notes
 
-## Contents
+## Agenda 
+
+- [作息](./0.Agenda/0.Agenda.md)
 
 ****
 
-### Agenda 
+### 习惯
 
-[作息](./0.Agenda/0.Agenda.md)
-
-****
+-  [作息表格](./0.Agenda/x.old/习惯/000_成型习惯-作息表格.md)
+-  
