@@ -1,7 +1,7 @@
 site_name: All MarkDown Notes
 
 nav:
-  - Home: 'home.md'
+  - Home: 'index.md'
   - Index: 'MarkDown_Notes/index.md'
   - Bullet:
     - Contents: 'MarkDown_Notes/0.Bullet/index.md'
