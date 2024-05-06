@@ -101,7 +101,7 @@ def yaml_nav_build(top_dir):
     with open(yaml_file_path, 'w', encoding='utf-8') as f:
         # 添加标题
         f.write(f"nav:\n")
-        f.write(f"  - Home: 'home.md'\n")
+        f.write(f"  - Home: 'index.md'\n")
         f.write(f"  - Index: 'MarkDown_Notes/index.md'\n")
         # 在每个Sub*目录下的所有Tribe*目录中添加链接
         for sub_dir in top_dir.iterdir():

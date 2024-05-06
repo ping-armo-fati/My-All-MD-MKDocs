@@ -25,12 +25,13 @@ nav:
     - Methodology: 'MarkDown_Notes//2.Research/4.Methodology/index.md'
   - Efficiency:
     - Contents: 'MarkDown_Notes/3.Efficiency/index.md'
-    - 文件管理: 'MarkDown_Notes//3.Efficiency/0.文件管理/index.md'
-    - 软件管理: 'MarkDown_Notes//3.Efficiency/1.软件管理/index.md'
+    - file management: 'MarkDown_Notes//3.Efficiency/0.file management/index.md'
+    - Software management: 'MarkDown_Notes//3.Efficiency/1.Software management/index.md'
   - Sundries:
     - Contents: 'MarkDown_Notes/4.Sundries/index.md'
-    - 别人杂事: 'MarkDown_Notes//4.Sundries/别人杂事/index.md'
-    - 博一: 'MarkDown_Notes//4.Sundries/博一/index.md'
+    - first year: 'MarkDown_Notes//4.Sundries/first year/index.md'
+    - other people: 'MarkDown_Notes//4.Sundries/other people/index.md'
+
 
 repo_url: https://github.com/ping-armo-fati/My-All-MD-sphinx-rtd-mirror
 
