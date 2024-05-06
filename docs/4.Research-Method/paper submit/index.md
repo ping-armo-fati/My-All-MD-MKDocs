@@ -1,4 +1,4 @@
-# 论文投稿
+# paper submit
 ****
 ****
   - [000_sci投稿信关于coverletter的教程](000_sci投稿信关于coverletter的教程.md)
