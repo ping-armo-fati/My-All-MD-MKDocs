@@ -1,5 +1,4 @@
 # Methodology
 ****
 ****
-  - [index](index.md)
 ****

@@ -1,5 +1,4 @@
 # idea
 ****
 ****
-  - [index](index.md)
 ****

@@ -17,18 +17,18 @@ def tribe_idx_build(top_dir):
                     file_path.touch(exist_ok=True)
 
                     # 打开文件并清空内容
-                    with open(file_path, 'w') as f:
+                    with open(file_path, 'w', encoding='utf-8') as f:
                         pass
                     print(tribe_dir, ": index.md have been cleaned")
 
                     # 填写内容
-                    with open(file_path, 'w') as f:
+                    with open(file_path, 'w', encoding='utf-8') as f:
                         tribe_dir_title = tribe_dir.name.split('.', 1)[-1]
                         f.write(f"# {tribe_dir_title}\n")
                         f.write("****\n")
                         f.write("****\n")
                         for file in tribe_dir.iterdir():
-                            if file.suffix == '.md':
+                            if file.suffix == '.md' and file != file_path:
                                 # 去掉文件名中的数字和点的前缀
                                 file_title = file.stem.split('.', 1)[-1]
                                 f.write(f"  - [{file_title}]({file.stem}{file.suffix})\n")
@@ -44,7 +44,7 @@ def sub_idx_build(top_dir):
             index_file_path = sub_dir / 'index.md'
             index_file_path.touch(exist_ok=True)
             # 打开文件并清空内容
-            with open(index_file_path, 'w') as f:
+            with open(index_file_path, 'w', encoding='utf-8') as f:
                 pass
             print(sub_dir, ": index.md have been cleaned")
             # 写入内容
@@ -68,12 +68,12 @@ def docs_idx_build(top_dir):
     index_file_path = top_dir / 'index.md'
     index_file_path.touch(exist_ok=True)
     # 打开文件并清空内容
-    with open(index_file_path, 'w') as f:
+    with open(index_file_path, 'w', encoding='utf-8') as f:
         pass
     print(top_dir, ": index.md have been cleaned")
 
     # 写入内容
-    with open(index_file_path, 'w') as f:
+    with open(index_file_path, 'w', encoding='utf-8') as f:
         # 添加标题
         f.write(f"# Home\n")
         f.write("****\n")
@@ -92,12 +92,12 @@ def yaml_nav_build(top_dir):
     yaml_file_path = top_dir / 'nav.yaml'
     yaml_file_path.touch(exist_ok=True)
     # 打开文件并清空内容
-    with open(yaml_file_path, 'w') as f:
+    with open(yaml_file_path, 'w', encoding='utf-8') as f:
         pass
     print(top_dir, ": nav.yaml have been cleaned")
 
     # 写入内容
-    with open(yaml_file_path, 'w') as f:
+    with open(yaml_file_path, 'w', encoding='utf-8') as f:
         # 添加标题
         f.write(f"nav:\n")
         f.write(f"  - Home: 'home.md'\n")

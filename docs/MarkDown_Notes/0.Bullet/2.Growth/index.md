@@ -1,5 +1,4 @@
 # Growth
 ****
 ****
-  - [index](index.md)
 ****

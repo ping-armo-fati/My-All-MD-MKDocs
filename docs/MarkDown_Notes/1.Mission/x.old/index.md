@@ -1,5 +1,4 @@
 # old
 ****
 ****
-  - [index](index.md)
 ****

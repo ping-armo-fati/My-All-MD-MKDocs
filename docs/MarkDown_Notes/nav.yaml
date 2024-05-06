@@ -13,7 +13,7 @@ nav:
     - Contents: 'MarkDown_Notes/1.Mission/index.md'
     - Log: 'MarkDown_Notes//1.Mission/a.Log/index.md'
     - Projec: 'MarkDown_Notes//1.Mission/b.Projec/index.md'
-    - 学习: 'MarkDown_Notes//1.Mission/c.学习/index.md'
+    - 瀛︿範: 'MarkDown_Notes//1.Mission/c.瀛︿範/index.md'
     - old: 'MarkDown_Notes//1.Mission/x.old/index.md'
   - Research: 
     - Contents: 'MarkDown_Notes/2.Research/index.md'
@@ -23,9 +23,9 @@ nav:
     - Methodology: 'MarkDown_Notes//2.Research/4.Methodology/index.md'
   - Efficiency: 
     - Contents: 'MarkDown_Notes/3.Efficiency/index.md'
-    - 文件管理: 'MarkDown_Notes//3.Efficiency/0.文件管理/index.md'
-    - 软件管理: 'MarkDown_Notes//3.Efficiency/1.软件管理/index.md'
+    - 鏂囦欢绠＄悊: 'MarkDown_Notes//3.Efficiency/0.鏂囦欢绠＄悊/index.md'
+    - 杞欢绠＄悊: 'MarkDown_Notes//3.Efficiency/1.杞欢绠＄悊/index.md'
   - Sundries: 
     - Contents: 'MarkDown_Notes/4.Sundries/index.md'
-    - 别人杂事: 'MarkDown_Notes//4.Sundries/别人杂事/index.md'
-    - 博一: 'MarkDown_Notes//4.Sundries/博一/index.md'
+    - 鍒汉鏉備簨: 'MarkDown_Notes//4.Sundries/鍒汉鏉備簨/index.md'
+    - 鍗氫竴: 'MarkDown_Notes//4.Sundries/鍗氫竴/index.md'

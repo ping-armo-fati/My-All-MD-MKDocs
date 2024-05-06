@@ -1,5 +1,4 @@
 # Projec
 ****
 ****
-  - [index](index.md)
 ****
