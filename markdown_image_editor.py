@@ -79,6 +79,8 @@ def rename_image_files_by_alt_text(root_dir_input, assets_path_input):
                     print(f"读取了文件 {file}")
                     # 查找所有的图片表达式
                     img_expression = re.findall(markdown_image_pattern, content)
+                    # 剔除重复
+
 
                     # 遍历所有的图片表达式
                     for expr in img_expression:
