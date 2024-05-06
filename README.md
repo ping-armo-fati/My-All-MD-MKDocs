@@ -1,6 +1,10 @@
-# My-All-MD-sphinx-rtd-mirror
-my all markdown files to create a html by sphinx and commit to read the docs, the projection frame are refer to the Gymnasium's doc
+# My-All-MD-MKDocs
+
+my all markdown files to create 
+a html by MkDocs and commit to read the docs, 
+
 ##  install MKDocs
+
 ``` shell
 pip install mkdocs
 # init

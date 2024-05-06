@@ -55,7 +55,6 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
       toggle:
         icon:
         name:

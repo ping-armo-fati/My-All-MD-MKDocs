@@ -76,7 +76,7 @@ def docs_idx_build(top_dir):
     # 写入内容
     with open(index_file_path, 'w', encoding='utf-8') as f:
         # 添加标题
-        f.write(f"# Home\n")
+        f.write(f"# Root\n")
         f.write("****\n")
         f.write("****\n")
         # 在每个Sub*目录下的所有Tribe*目录中添加链接
