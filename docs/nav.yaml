@@ -1,9 +1,7 @@
-site_name: All MarkDown Notes
-
 nav:
   - Home: 'Home.md'
   - Index: 'index.md'
-  - Bullet:
+  - Bullet: 
     - Contents: '0.Bullet/index.md'
     - Agenda: '0.Bullet/0.Agenda/index.md'
     - To-Do-list: '0.Bullet/1.To-Do-list/index.md'
@@ -11,51 +9,23 @@ nav:
     - Interest: '0.Bullet/3.Interest/index.md'
     - Password-Book: '0.Bullet/4.Password-Book/index.md'
     - unsorted: '0.Bullet/x.unsorted/index.md'
-  - Mission:
+  - Mission: 
     - Contents: '1.Mission/index.md'
     - Log: '1.Mission/a.Log/index.md'
     - Projec: '1.Mission/b.Projec/index.md'
     - 学习: '1.Mission/c.学习/index.md'
     - old: '1.Mission/x.old/index.md'
-  - Research:
+  - Research: 
     - Contents: '2.Research/index.md'
     - Seminar: '2.Research/1.Seminar/index.md'
     - Literature: '2.Research/2.Literature/index.md'
     - idea: '2.Research/3.idea/index.md'
     - Methodology: '2.Research/4.Methodology/index.md'
-  - Efficiency:
+  - Efficiency: 
     - Contents: '3.Efficiency/index.md'
     - file management: '3.Efficiency/0.file management/index.md'
     - Software management: '3.Efficiency/1.Software management/index.md'
-  - Sundries:
+  - Sundries: 
     - Contents: '4.Sundries/index.md'
     - first year: '4.Sundries/first year/index.md'
     - other people: '4.Sundries/other people/index.md'
-
-
-repo_url: https://github.com/ping-armo-fati/My-All-MD-sphinx-rtd-mirror
-
-theme:
-  name: mkdocs
-  highlightjs: true
-  user_color_mode_toggle: true
-  feature:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
-  hljs_languages:
-    - yaml
-    - rust
-  shortcuts:
-    help: 191    # ?
-    next: 78     # n
-    previous: 80 # p
-    search: 83   # s
-  navigation_depth: 2
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon:
-        name:
