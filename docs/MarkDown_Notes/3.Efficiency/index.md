@@ -1,6 +1,6 @@
 # Efficiency
 ****
 ****
-  - [文件管理](0.文件管理/index.md)
-  - [软件管理](1.软件管理/index.md)
+  - [file management](0.file management/index.md)
+  - [Software management](1.Software management/index.md)
 ****

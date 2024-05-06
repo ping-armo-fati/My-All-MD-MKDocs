@@ -1,6 +1,6 @@
 # Sundries
 ****
 ****
-  - [别人杂事](别人杂事/index.md)
-  - [博一](博一/index.md)
+  - [first year](first year/index.md)
+  - [other people](other people/index.md)
 ****
