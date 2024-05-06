@@ -36,10 +36,10 @@ nav:
     - idea: '3.Research/3.idea/index.md'
   - Research-Method:
     - Contents: '4.Research-Method/index.md'
-    - 学科: '4.Research-Method/学科/index.md'
-    - 实验教程: '4.Research-Method/实验教程/index.md'
-    - 科研经验、心得: '4.Research-Method/科研经验、心得/index.md'
-    - 论文投稿: '4.Research-Method/论文投稿/index.md'
+    - discipline: '4.Research-Method/discipline/index.md'
+    - experience: '4.Research-Method/experience/index.md'
+    - Experiment: '4.Research-Method/Experiment/index.md'
+    - paper submit: '4.Research-Method/paper submit/index.md'
   - Efficiency:
     - Contents: '5.Efficiency/index.md'
     - file management: '5.Efficiency/0.file management/index.md'
