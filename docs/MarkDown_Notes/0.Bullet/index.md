@@ -1,12 +1,10 @@
-# Bullet Notes
-
-## Agenda 
-
-- [作息](./0.Agenda/0.Agenda.md)
-
+# Bullet
 ****
-
-### 习惯
-
--  [作息表格](./0.Agenda/x.old/习惯/000_成型习惯-作息表格.md)
--  
+****
+  - [Agenda](0.Agenda/index.md)
+  - [To-Do-list](1.To-Do-list/index.md)
+  - [Growth](2.Growth/index.md)
+  - [Interest](3.Interest/index.md)
+  - [Password-Book](4.Password-Book/index.md)
+  - [unsorted](x.unsorted/index.md)
+****
