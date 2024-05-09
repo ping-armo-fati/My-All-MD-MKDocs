@@ -8,14 +8,12 @@
 
 - [Bing](https://www.bing.com/?FORM=Z9FD1&mkt=zh-CN)
 
+- [StackOverflow](https://stackoverflow.com/questions/ask)
+
 ### Follow
 
-- Martin Wermerlinger
-  - https://www.researchgate.net/profile/Martin-Wermelinger
-- ETH
-  - https://gramaziokohler.arch.ethz.ch/web/e/forschung/275.html
-
-- 
+- [Martin Wermerlinger](https://www.researchgate.net/profile/Martin-Wermelinger)
+- [ETH](https://gramaziokohler.arch.ethz.ch/web/e/forschung/275.html)
 
 ****
 
