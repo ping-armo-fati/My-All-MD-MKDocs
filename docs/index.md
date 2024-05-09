@@ -8,6 +8,4 @@
   - [Research-Method](4.Research-Method/index.md)
   - [Efficiency](5.Efficiency/index.md)
   - [Sundries](6.Sundries/index.md)
-  - [icon](icon/index.md)
-  - [MarkDown_Notes](MarkDown_Notes/index.md)
 ****

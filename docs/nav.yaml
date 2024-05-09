@@ -47,8 +47,3 @@ nav:
     - Contents: '6.Sundries/index.md'
     - first year: '6.Sundries/first year/index.md'
     - other people: '6.Sundries/other people/index.md'
-  - icon: 
-    - Contents: 'icon/index.md'
-  - MarkDown_Notes: 
-    - Contents: 'MarkDown_Notes/index.md'
-    - assets: 'MarkDown_Notes/assets/index.md'
