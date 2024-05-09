@@ -53,10 +53,9 @@ nav:
     - Contents: 'MarkDown_Notes/index.md'
     - assets: 'MarkDown_Notes/assets/index.md'
 
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
 
 theme:
-
   name: material
   feature:
     - navigation.tabs
@@ -65,8 +64,9 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.path
-
     - toc.follow
+
+
   palette:
   # Palette toggle for light mode
     - scheme: default

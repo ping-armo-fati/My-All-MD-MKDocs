@@ -239,4 +239,13 @@ pip show package_name
 > 2. **Coursera - Algorithms, Part I and Part II by Stanford University (via NPTEL)**
 >    - 链接：[https://nptel.ac.in/courses/106/106/106106079/](https://nptel.ac.in/courses/106/106/106106079/)
 >    - 这门课程由Stanford University的教授通过NPTEL平台提供，涵盖了算法的基础知识。
->
+
+## TIps
+
+- 创建虚拟环境
+
+```
+py -m venv venv
+venv/Scripts/activate
+```
+
