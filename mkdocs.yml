@@ -65,6 +65,7 @@ theme:
     - navigation.tracking
     - navigation.path
     - toc.follow
+    - navigation.footer
 
 
   palette:
