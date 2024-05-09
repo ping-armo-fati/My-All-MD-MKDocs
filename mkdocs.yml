@@ -53,7 +53,11 @@ nav:
     - Contents: 'MarkDown_Notes/index.md'
     - assets: 'MarkDown_Notes/assets/index.md'
 
+repo_url: https://github.com/squidfunk/mkdocs-material
+
 theme:
+
+  favicon: icon/shido.jpg
   name: material
   feature:
     - navigation.tabs
@@ -62,6 +66,7 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.path
+    - navigation.footer
     - toc.follow
   palette:
   # Palette toggle for light mode
@@ -74,6 +79,8 @@ theme:
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: orange
+      accent: pink
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
