@@ -65,7 +65,7 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.path
-    - navigation.footer
+
     - toc.follow
   palette:
   # Palette toggle for light mode
