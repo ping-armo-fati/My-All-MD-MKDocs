@@ -19,6 +19,7 @@ nav:
     - CGAL: '1.Project/3.CGAL/index.md'
     - GYM: '1.Project/4.GYM/index.md'
     - old: '1.Project/5.old/index.md'
+    - RL-Learn: '1.Project/6.RL-Learn/index.md'
   - Learn: 
     - Contents: '2.Learn/index.md'
     - overview: '2.Learn/0.overview/index.md'
@@ -46,3 +47,6 @@ nav:
     - Contents: '6.Sundries/index.md'
     - first year: '6.Sundries/first year/index.md'
     - other people: '6.Sundries/other people/index.md'
+  - MarkDown_Notes: 
+    - Contents: 'MarkDown_Notes/index.md'
+    - assets: 'MarkDown_Notes/assets/index.md'
