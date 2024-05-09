@@ -45,6 +45,24 @@ mkdocs serve
 pip install mkdocs-material
 ```
 
+- 删除部分
+```yaml
+  hljs_languages:
+    - yaml
+    - rust
+
+  highlightjs: true
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  
+  navigation_depth: 3
+  
+```
+
+
 - 设置导航
   ```yaml
   # 设置主题

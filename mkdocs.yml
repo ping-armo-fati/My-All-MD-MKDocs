@@ -51,11 +51,10 @@ nav:
 
 
 
-repo_url: https://github.com/ping-armo-fati/
+repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
 
 theme:
   name: material
-  highlightjs: true
   feature:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -64,13 +63,6 @@ theme:
     - navigation.tracking
     - navigation.path
     - toc.follow
-  hljs_languages:
-    - yaml
-    - rust
-  shortcuts:
-    help: 191    # ?
-    next: 78     # n
-    previous: 80 # p
-    search: 83   # s
-  navigation_depth: 3
+
+
 
