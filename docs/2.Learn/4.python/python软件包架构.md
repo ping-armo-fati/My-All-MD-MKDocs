@@ -244,7 +244,7 @@ pip show package_name
 
 - 创建虚拟环境
 
-```
+```shell
 py -m venv venv
 venv/Scripts/activate
 ```
