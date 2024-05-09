@@ -63,17 +63,17 @@ pip install mkdocs-material
 
 
 - 设置导航
-  ```yaml
-  # 设置主题
-  theme:
-  name: material
-  # 锚跟踪
-  features:
-    - navigation.tracking      
-  # 顶端路径
-    - navigation.path
-  # 节索引页
-    - navigation.indexes
-  # 锚跟随
-    - toc.follow
-  ```
+```yaml
+# 设置主题
+theme:
+name: material
+# 锚跟踪
+features:
+  - navigation.tracking      
+# 顶端路径
+  - navigation.path
+# 节索引页
+  - navigation.indexes
+# 锚跟随
+  - toc.follow
+```
