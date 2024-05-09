@@ -60,9 +60,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
-    - navigation.tracking
-    - navigation.path
-    - toc.follow
+
 
 
 
