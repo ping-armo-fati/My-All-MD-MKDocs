@@ -23,6 +23,20 @@ mkdocs serve
 
 ## 主题
 
+### 其他
+
+> 总体
+> 
+> https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+> 
+> 可选
+> 
+> https://siphalor.github.io/mkdocs-custommill/#customization/
+> https://github.com/daizutabi/mkdocs-ivory
+> https://squidfunk.github.io/mkdocs-material/creating-your-site/
+> 
+>
+
 ### materials for Mkdocs
 
 - Install
