@@ -59,9 +59,7 @@ pip install mkdocs-material
     search: 83   # s
   
   navigation_depth: 3
-    - navigation.tracking
-    - navigation.path
-    - toc.follow
+
 ```
 
 
