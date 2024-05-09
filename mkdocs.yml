@@ -57,7 +57,6 @@ repo_url: https://github.com/squidfunk/mkdocs-material
 
 theme:
 
-  favicon: icon/shido.jpg
   name: material
   feature:
     - navigation.tabs
