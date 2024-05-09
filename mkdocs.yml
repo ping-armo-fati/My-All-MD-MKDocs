@@ -56,7 +56,7 @@ nav:
 repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
 
 theme:
-  name: material
+  name: mkdocs
   feature:
     - navigation.tabs
     - navigation.tabs.sticky
