@@ -1,14 +1,14 @@
-Motivation
+# Motivation
 
-2023年3月18日
-
-13:53
+## Chris
 
 ![](../../assets/000_Motivation_000.png)
 
 ![](../../assets/000_Motivation_001.png)
 
 ![](../../assets/000_Motivation_002.png)
+
+## Life
 
 ![](../../assets/000_Motivation_003.png)
 

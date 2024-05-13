@@ -5,5 +5,4 @@
   - [编程具体细节知识](1.编程具体细节知识.md)
   - [实战](2.实战.md)
   - [GitHub](3.GitHub.md)
-  - [custom-Gym-MuJoco](4.custom-Gym-MuJoco.md)
 ****
