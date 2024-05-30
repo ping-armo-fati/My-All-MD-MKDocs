@@ -1,8 +1,7 @@
 # Bullet
 ****
 ****
-  - [Habits](0.Habits/index.md)
-  - [Work-out](1.Work-out/index.md)
+  - [Lifestyle](0.Lifestyle/index.md)
   - [memoirs](2.memoirs/index.md)
   - [Interest](3.Interest/index.md)
   - [Password-Book](4.Password-Book/index.md)

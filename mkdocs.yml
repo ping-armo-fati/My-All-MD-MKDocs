@@ -5,8 +5,7 @@ nav:
   - Index: 'index.md'
   - Bullet:
     - Contents: '0.Bullet/index.md'
-    - Habits: '0.Bullet/0.Habits/index.md'
-    - Work-out: '0.Bullet/1.Work-out/index.md'
+    - Lifestyle: '0.Bullet/0.Lifestyle/index.md'
     - memoirs: '0.Bullet/2.memoirs/index.md'
     - Interest: '0.Bullet/3.Interest/index.md'
     - Password-Book: '0.Bullet/4.Password-Book/index.md'
@@ -45,6 +44,7 @@ nav:
     - Contents: '5.Efficiency/index.md'
     - file management: '5.Efficiency/0.file management/index.md'
     - Software management: '5.Efficiency/1.Software management/index.md'
+    - Mission-func: '5.Efficiency/2.Mission-func/index.md'
   - Sundries:
     - Contents: '6.Sundries/index.md'
     - first year: '6.Sundries/first year/index.md'
