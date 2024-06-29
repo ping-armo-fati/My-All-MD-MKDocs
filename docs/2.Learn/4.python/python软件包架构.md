@@ -1,5 +1,132 @@
 # 软件包
 
+## 大型程序文件传参、配置
+
+### 需求
+
+- 问题描述
+
+> 编写大型程序中，多模块、多函数、函数间存在复杂的调用：
+>
+> 	1.  参数传递臃肿：模块间调用和模块内调用函数， 阅读、维护和调试困难
+> 	1.  参数关系复杂：有必须参数、可选参数、默认参数、依赖性参数、选项参数、互斥参数
+> 	1.  维护问题：参数命名及作用功能等，混淆、遗忘和使用方法复杂，添加注释、文本也许会好
+
+- 需求描述
+
+> 功能实现-配置文件保存变量：
+>
+> 1. 将参数保存为配置文件（yaml,XML）或是数据库（db,MySQL）
+> 2. 加载、编辑配置文件（读写改删存）
+> 3. 配置数据转化为整合参数，类似于argparser。（自定义的封装类）
+> 4. 参数结构：名称、类型、数量、文档、注释、依赖性、互斥性
+> 5. 编程维护便利：注释文本打印提升，构建中？
+
+- 方案参考
+  - [YAML菜鸟教程](https://www.runoob.com/w3cnote/yaml-intro.html)
+  - [XML菜鸟教程](https://www.runoob.com/xml/xml-tutorial.html)
+
+```python
+# Yaml方案
+import yaml
+
+# 读取 YAML 文件
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
+
+# 修改配置
+config['database']['password'] = 'new_password'
+
+# 写入修改后的配置
+with open('config.yaml', 'w') as file:
+    yaml.dump(config, file)
+
+    
+# XML格式
+import xml.etree.ElementTree as ET
+
+# 读取 XML 文件
+tree = ET.parse('config.xml')
+root = tree.getroot()
+
+# 修改配置
+for elem in root.findall('.//password'):
+    elem.text = 'new_password'
+
+# 写入修改后的配置
+tree.write('config.xml')
+
+```
+
+### 实现
+
+- Config类设计
+  - 从YAML读取配置
+  - 修改参数
+  - 一体化配置注释
+  - 检查：互斥、依赖参数
+  - Info：参数、值、文本
+
+```python
+# 定义类
+class MyConfig:
+    def __init__(self, arg1, arg2, arg3, arg_doc):
+        self.arg1 = arg1
+        self.arg2 = arg2
+        self.arg3 = arg3
+        self._descriptions = doc
+
+    def add_description(self, param_name, description):
+        self._descriptions[param_name] = description
+
+    def get_description(self, param_name):
+        return self._descriptions.get(param_name, "No description available")
+# 保存类
+import pickle
+
+# 创建一个 MyConfig 类的实例
+my_config = MyConfig(arg1="value1", arg2="value2", arg3="value3")
+# 保存实例到文件
+with open('my_config.pkl', 'wb') as file:
+    pickle.dump(my_config, file)
+
+# 加载保存的实例
+with open('my_config.pkl', 'rb') as file:
+    loaded_config = pickle.load(file)
+
+# 获取参数描述
+print(loaded_config.get_description("arg1"))
+
+```
+
+- 从YAML中读取配置实例化类
+
+```python
+import yaml
+
+# 读取 YAML 文件
+with open('my_config.yaml', 'r') as file:
+    yaml_data = yaml.safe_load(file)
+
+# 创建 MyConfig 类的实例
+my_config = MyConfig(**yaml_data)#等价于my_config = MyConfig(arg1=yaml_data['arg1'], arg2=yaml_data['arg2'], arg3=yaml_data['arg3'])
+
+
+# 使用参数
+print(my_config.arg1)
+
+```
+
+
+
+
+
+
+
+## Python详细进阶知识及技巧
+
+- <https://blog.csdn.net/xiaolinyui/article/details/137351381>
+
 ## 模块编写&安装
 
 - 包结构
@@ -249,3 +376,8 @@ py -m venv venv
 venv/Scripts/activate
 ```
 
+
+
+## 规范
+
+https://www.runoob.com/w3cnote/google-python-styleguide.html
