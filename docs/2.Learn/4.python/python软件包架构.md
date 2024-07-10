@@ -1,121 +1,6 @@
 # 软件包
 
-## 大型程序文件传参、配置
 
-### 需求
-
-- 问题描述
-
-> 编写大型程序中，多模块、多函数、函数间存在复杂的调用：
->
-> 	1.  参数传递臃肿：模块间调用和模块内调用函数， 阅读、维护和调试困难
-> 	1.  参数关系复杂：有必须参数、可选参数、默认参数、依赖性参数、选项参数、互斥参数
-> 	1.  维护问题：参数命名及作用功能等，混淆、遗忘和使用方法复杂，添加注释、文本也许会好
-
-- 需求描述
-
-> 功能实现-配置文件保存变量：
->
-> 1. 将参数保存为配置文件（yaml,XML）或是数据库（db,MySQL）
-> 2. 加载、编辑配置文件（读写改删存）
-> 3. 配置数据转化为整合参数，类似于argparser。（自定义的封装类）
-> 4. 参数结构：名称、类型、数量、文档、注释、依赖性、互斥性
-> 5. 编程维护便利：注释文本打印提升，构建中？
-
-- 方案参考
-  - [YAML菜鸟教程](https://www.runoob.com/w3cnote/yaml-intro.html)
-  - [XML菜鸟教程](https://www.runoob.com/xml/xml-tutorial.html)
-
-```python
-# Yaml方案
-import yaml
-
-# 读取 YAML 文件
-with open('config.yaml', 'r') as file:
-    config = yaml.safe_load(file)
-
-# 修改配置
-config['database']['password'] = 'new_password'
-
-# 写入修改后的配置
-with open('config.yaml', 'w') as file:
-    yaml.dump(config, file)
-
-    
-# XML格式
-import xml.etree.ElementTree as ET
-
-# 读取 XML 文件
-tree = ET.parse('config.xml')
-root = tree.getroot()
-
-# 修改配置
-for elem in root.findall('.//password'):
-    elem.text = 'new_password'
-
-# 写入修改后的配置
-tree.write('config.xml')
-
-```
-
-### 实现
-
-- Config类设计
-  - 从YAML读取配置
-  - 修改参数
-  - 一体化配置注释
-  - 检查：互斥、依赖参数
-  - Info：参数、值、文本
-
-```python
-# 定义类
-class MyConfig:
-    def __init__(self, arg1, arg2, arg3, arg_doc):
-        self.arg1 = arg1
-        self.arg2 = arg2
-        self.arg3 = arg3
-        self._descriptions = doc
-
-    def add_description(self, param_name, description):
-        self._descriptions[param_name] = description
-
-    def get_description(self, param_name):
-        return self._descriptions.get(param_name, "No description available")
-# 保存类
-import pickle
-
-# 创建一个 MyConfig 类的实例
-my_config = MyConfig(arg1="value1", arg2="value2", arg3="value3")
-# 保存实例到文件
-with open('my_config.pkl', 'wb') as file:
-    pickle.dump(my_config, file)
-
-# 加载保存的实例
-with open('my_config.pkl', 'rb') as file:
-    loaded_config = pickle.load(file)
-
-# 获取参数描述
-print(loaded_config.get_description("arg1"))
-
-```
-
-- 从YAML中读取配置实例化类
-
-```python
-import yaml
-
-# 读取 YAML 文件
-with open('my_config.yaml', 'r') as file:
-    yaml_data = yaml.safe_load(file)
-
-# 创建 MyConfig 类的实例
-my_config = MyConfig(**yaml_data)#等价于my_config = MyConfig(arg1=yaml_data['arg1'], arg2=yaml_data['arg2'], arg3=yaml_data['arg3'])
-
-
-# 使用参数
-print(my_config.arg1)
-
-```
 
 
 
@@ -270,6 +155,20 @@ pip show package_name
 > - `pip install .`：这个命令会将包安装到 Python 的 site-packages 目录中。如果你在安装后修改了包的源代码，那么你需要重新安装才能看到更改的效果。
 > - [`pip install -e .`（或 `pip install --editable .`）：这个命令会在 site-packages 目录中创建一个指向你的包的源代码目录的链接。这意味着你可以在不重新安装的情况下修改源代码，并立即看到更改的效果。这对于开发和测试新功能非常有用](https://blog.csdn.net/robot_learner/article/details/128946745)[1](https://blog.csdn.net/robot_learner/article/details/128946745)。
 
+## 关于依赖项和`requirmensts.txt`
+
+- 生成requirments.txt
+  - [Python基础：生成requirements.txt文件 ](https://www.bilibili.com/read/cv33254010/)
+  - [PyCharm自动生成requirements.txt_pycharm生成requirements](https://blog.csdn.net/COCO56/article/details/117452383)
+
+```shell
+pip freeze>requirements.txt
+pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+```
+
+
+
 # 基础练习
 
 ## 参考
@@ -381,3 +280,15 @@ venv/Scripts/activate
 ## 规范
 
 https://www.runoob.com/w3cnote/google-python-styleguide.html
+
+
+
+## 开发者模式安装软件包
+
+> [是的，你的理解是正确的。当你使用`pip install . -e`命令时，Python会生成一个`.egg-info`目录](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)。
+>
+> [这个命令是用来在开发模式下安装Python包的，也就是说，它会在你的Python环境中创建一个指向你的项目源代码的链接](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)[。这样，你就可以在不重新安装包的情况下，立即看到对源代码的修改如何影响包的行为](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)。
+>
+> [生成的`.egg-info`目录包含了关于这个包的元数据，比如它的名称、版本、作者、许可证等信息，以及它的依赖关系](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)[。这些信息被`setuptools`和`pip`等Python包管理器用来执行各种操作，如安装、卸载和升级包](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)。
+>
+> [因此，当你运行`pip install . -e`命令时，Python会在你的项目目录下生成一个`.egg-info`目录](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[1](https://www.cnblogs.com/wuzhiblog/p/python_make_egg_or_whl.html)[2](https://blog.csdn.net/fengqianlang/article/details/132281624)。希望这个解答对你有所帮助！
