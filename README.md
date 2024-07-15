@@ -24,7 +24,6 @@ mkdocs serve
 ## 主题
 
 ### 其他
-
 > 总体
 > 
 > https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes

@@ -1,7 +1,6 @@
 import os
 import re
 
-
 root_dir = r".\docs"
 assets_path = r".\docs\assets"
 markdown_image_pattern = r'!\[(.*?)\]\((.*?)\)'
@@ -81,7 +80,6 @@ def rename_image_files_by_alt_text(root_dir_input, assets_path_input):
                     img_expression = re.findall(markdown_image_pattern, content)
                     # 剔除重复
 
-
                     # 遍历所有的图片表达式
                     for expr in img_expression:
                         print(f"查找到图片链接 {expr}")
@@ -92,7 +90,8 @@ def rename_image_files_by_alt_text(root_dir_input, assets_path_input):
                         # 求相对路径
                         relative_path_to_assets = relative_path(assets_path_input, root)
                         # 修改图片文件名为 序号+ _ +文件名+方括号中的文本+原图片文件后缀
-                        new_img_filename = str(img_counter) + "_" + file_name + alt_text + os.path.splitext(img_filename)[1]
+                        new_img_filename = str(img_counter) + "_" + file_name + alt_text + \
+                                           os.path.splitext(img_filename)[1]
                         img_counter += 1
                         # 修改图片的url为修改名字后 对应的url
                         new_img_url = os.path.join(relative_path_to_assets, new_img_filename)
@@ -124,14 +123,16 @@ def relative_path(target_path_input, reference_path_input):
     # print("相对路径计算" + relative_path_1)
     return relative_path_1
 
+
 # 打印当前工作目录
 # print(os.getcwd())
 #  打印文件的绝对路径
 # print(os.path.abspath('./data/files'))
 
 
-# Main
-# run it！
-process_markdown_files(root_dir, assets_path)
-# clean_unused_images(root_dir, assets_path)
-# rename_image_files_by_alt_text(root_dir, assets_path)
+if __name__ == "__main__":
+    # Main
+    # run it！
+    process_markdown_files(root_dir, assets_path)
+    # clean_unused_images(root_dir, assets_path)
+    # rename_image_files_by_alt_text(root_dir, assets_path)
