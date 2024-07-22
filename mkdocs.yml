@@ -4,7 +4,7 @@ nav:
   - Home: 'Home.md'
   - Index: 'index.md'
   - Bullet:
-    - Contents: '0.Bullet/index.md'
+    - '0.Bullet/index.md'
     - Lifestyle: '0.Bullet/0.Lifestyle/index.md'
     - memoirs: '0.Bullet/2.memoirs/index.md'
     - Interest: '0.Bullet/3.Interest/index.md'
