@@ -1,10 +1,25 @@
-# Lifestyle
+# Content Of Lifestyle
 ****
 ****
-  - [Agenda](0.Agenda.md)
-  - [Habits-build](1.Habits-build.md)
-  - [Habits-ToBe](2.Habits-ToBe.md)
-  - [WorkOut](3.WorkOut.md)
-  - [Workout-PPL](4.Workout-PPL.md)
-  - [Motivation](5.Motivation.md)
+  - [agenda](0.agenda.md)
+  - [内务](1.内务.md)
+  - [腹肌](10.腹肌.md)
+  - [有氧](11.有氧.md)
+  - [体态矫正](12.体态矫正.md)
+  - [膝盖](13.膝盖.md)
+  - [篮球](14.篮球.md)
+  - [臀腿](15.臀腿.md)
+  - [饮食休息](16.饮食休息.md)
+  - [综合力量日](17.综合力量日.md)
+  - [腿推拉](18.腿推拉.md)
+  - [motivation](19.motivation.md)
+  - [habits_build](2.habits_build.md)
+  - [健身知识](20.健身知识.md)
+  - [habits_tobe](3.habits_tobe.md)
+  - [计划](4.计划.md)
+  - [胸](5.胸.md)
+  - [背](6.背.md)
+  - [肩](7.肩.md)
+  - [二头](8.二头.md)
+  - [前锯肌](9.前锯肌.md)
 ****

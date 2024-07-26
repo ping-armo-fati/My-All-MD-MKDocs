@@ -1,4 +1,4 @@
-# Research-Method
+# Content Of Research-Method
 ****
 ****
   - [discipline](discipline/index.md)

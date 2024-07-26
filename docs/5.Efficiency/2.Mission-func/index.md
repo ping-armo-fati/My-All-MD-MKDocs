@@ -1,5 +1,6 @@
-# Mission-func
+# Content Of Mission-func
 ****
 ****
-  - [WorkFlow](1.WorkFlow.md)
+  - [翻译](0.翻译.md)
+  - [paper_read](1.paper_read.md)
 ****

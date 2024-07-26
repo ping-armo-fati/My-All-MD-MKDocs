@@ -1,5 +1,5 @@
-# other people
+# Content Of other people
 ****
 ****
-  - [000_杂事](000_杂事.md)
+  - [杂事](0.杂事.md)
 ****

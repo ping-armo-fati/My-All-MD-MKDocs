@@ -1,7 +1,7 @@
-# Research
+# Content Of Research
 ****
 ****
-  - [Seminar](1.Seminar/index.md)
-  - [Literature](2.Literature/index.md)
-  - [idea](3.idea/index.md)
+  - [Seminar](Seminar/index.md)
+  - [Literature](Literature/index.md)
+  - [idea](idea/index.md)
 ****
