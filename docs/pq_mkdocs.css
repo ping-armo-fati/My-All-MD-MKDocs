@@ -5,6 +5,7 @@
     --light-orange: #ffa500;
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
+    font-size: 20px; /* 将根字体大小设置为20px */
 }
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
@@ -17,7 +18,8 @@ h1, h2, h3 {
 h1 {
     text-align: center;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
+    color: black;
 }
 
 /* 二级标题靠左，蓝灰色底纹，白色字体 */
@@ -27,15 +29,15 @@ h2 {
     color: white;
     font-size: 28px;
     display:inline-block;
-    padding: 0 10px 0 0;
-    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
 
 }
 
 /* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
 h3 {
     font-size: 24px;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     position: relative;
 }
 
