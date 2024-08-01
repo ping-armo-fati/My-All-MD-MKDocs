@@ -66,11 +66,11 @@ h4 {
 
 /* 正文字体大小为18，所有英文字体为等线，所有中文字体为等线 */
 body {
-    font-size: 1.2rem;
+    font-size: 25px;
     background-color: #FFFFFF!important;
     font-family: 'Merriweather', '等线', serif;
-
 }
+
 /* 区块引用：英文：手写体 中文：楷体 */
 blockquote {
     font-family: 'Comic Sans MS', '楷体', cursive;
