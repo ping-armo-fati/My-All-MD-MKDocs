@@ -1,0 +1,170 @@
+/* 尚未调试成功 */
+/* 高级蓝灰色 */
+:root {
+    --advanced-blue-gray: #55739f;
+    --light-orange: #ffa500;
+    --light-beige: #f5f5dc; /* 浅米色 */
+    --light-purple:#D8BFD8;
+}
+
+/* 所有标题字体颜色为高级蓝灰色，字体为等线 */
+h1, h2, h3 {
+    color: var(--advanced-blue-gray);
+    font-family: 'Roboto','等线', sans-serif;
+}
+
+/* 一级标题居中，有下划线，字体更大 */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* 二级标题靠左，蓝灰色底纹，白色字体 */
+h2 {
+    text-align: left;
+    background-color: var(--advanced-blue-gray);
+    color: white;
+    font-size: 28px;
+    display:inline-block;
+    padding: 0 10px 0 0;
+    border-radius: 5px;
+
+}
+
+/* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
+h3 {
+    font-size: 24px;
+    padding-left: 0.5rem;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.75rem;
+    height: 100%;
+    background-color: #55739f;
+}
+
+/* 四级标题字体为斜体，浅橙色，字体大小为26 */
+h4 {
+    font-style: italic;
+    color: var(--light-orange);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* 正文字体大小为18，所有英文字体为等线，所有中文字体为等线 */
+body {
+    font-size: 18px;
+    background-color: #FFFFFF!important;
+    font-family: 'Merriweather', '等线', serif;
+
+}
+/* 区块引用：英文：手写体 中文：楷体 */
+blockquote {
+    font-family: 'Comic Sans MS', '楷体', cursive;
+    background-color: #ffffcc!important;
+}
+/*段落*/
+p {
+    font-size: 20px;
+    font-family: 'Consolas', '等线', sans-serif!important;
+}
+/*列表*/
+ul, ol {
+    font-size: 24px;
+}
+
+ul ul, ol ol {
+    font-size: 22px;
+}
+
+ul ul ul, ol ol ol {
+    font-size: 20px;
+}
+
+ul ul ul ul, ol ol ol ol {
+    font-size: 18px;
+}
+/*表格*/
+ /* table */
+ table
+{
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Consolas', '等线', sans-serif;
+    margin: 20px;
+}
+ table td, table th
+{
+    border: 1px solid transparent;
+    color: rgb(18, 18, 18);
+    height: 30px;
+    padding: 10px;
+    border-radius: .5em;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+ table td {
+    font-family: 'Consolas', '等线', sans-serif;
+}
+ table thead th
+{
+    background-color: var(--advanced-blue-gray);
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+table tr:nth-child(odd)
+{
+    background: rgba(211, 211, 211, 0.6);
+}
+table tr:nth-child(even)
+{
+    background: rgba(128, 128, 128, 0.6);
+}
+table td:hover {
+  background-color: magenta!important;
+  color: white !important;
+  box-shadow: 0 0 10px 5px blue);
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+
+/* mk订制_表格设置 */
+.md-typeset table:not([class]) {
+    width: 100%; /* 表格宽度设为100% */
+    margin: 1em 0; /* 表格上下边距 */
+}
+
+/* 使表格内容居中显示 */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    text-align: center; /* 内容水平居中 */
+    padding: 8px; /* 单元格内边距 */
+}
+
+/* 调整表格边框和单元格间距 */
+.md-typeset table:not([class]) {
+    border-collapse: collapse; /* 边框合并为一个单一的边框 */
+    border-spacing: 0; /* 单元格间距为0 */
+    border: 1px solid #ddd; /* 表格边框颜色 */
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    border: 1px solid #ddd; /* 单元格边框颜色 */
+}
+
