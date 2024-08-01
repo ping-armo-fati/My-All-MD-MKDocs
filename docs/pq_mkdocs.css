@@ -64,7 +64,7 @@ h4 {
 
 /* 正文字体大小为18，所有英文字体为等线，所有中文字体为等线 */
 body {
-    font-size: 18px;
+    font-size: 1.2rem;
     background-color: #FFFFFF!important;
     font-family: 'Merriweather', '等线', serif;
 
