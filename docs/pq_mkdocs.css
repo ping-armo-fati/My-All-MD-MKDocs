@@ -14,12 +14,11 @@ h1, h2, h3, h4 {
     font-family: 'Roboto','等线', sans-serif;
 }
 
-/* 一级标题居中，有下划线，字体更大 */
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bolder;
-    color: black!important;
+    color: #000000!important;
 }
 
 /* 二级标题靠左，蓝灰色底纹，白色字体 */
@@ -40,7 +39,7 @@ h2 {
 /* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
 h3 {
     font-size: 1.8rem;
-    padding-left: 3.2rem;
+    padding-left: 3.6rem;
     position: relative;
 }
 
