@@ -9,7 +9,7 @@
 }
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: var(--advanced-blue-gray);
     font-family: 'Roboto','等线', sans-serif;
 }
@@ -17,7 +17,7 @@ h1, h2, h3 {
 /* 一级标题居中，有下划线，字体更大 */
 h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 3rem;
     font-weight: bolder;
     color: black;
 }
@@ -27,20 +27,20 @@ h2 {
     text-align: left;
     background-color: var(--advanced-blue-gray);
     color: white;
-    font-size: 28px;
+    font-size: 2rem;
     display: block;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 16px;
+    border-radius: 16px;
 
-    border-left: 10px solid transparent; /* 左边界透明，保持内容对齐 */
-    border-right: 10px solid transparent; /* 右边界透明，保持内容对齐 */
+    border-left: 16px solid transparent; /* 左边界透明，保持内容对齐 */
+    border-right: 16px solid transparent; /* 右边界透明，保持内容对齐 */
 
 }
 
 /* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
 h3 {
-    font-size: 24px;
-    padding-left: 2rem;
+    font-size: 1.8rem;
+    padding-left: 2.7rem;
     position: relative;
 }
 
@@ -56,9 +56,9 @@ h3::before {
 
 /* 四级标题字体为斜体，浅橙色，字体大小为26 */
 h4 {
-    font-style: italic;
-    color: var(--light-orange);
-    font-size: 26px;
+    font-style: italic!important;
+    color: var(--light-orange)!important;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
