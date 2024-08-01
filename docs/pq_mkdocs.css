@@ -1,11 +1,14 @@
 /* 尚未调试成功 */
 /* 高级蓝灰色 */
+html{
+    font-size: 25px!important; /* 将根字体大小设置为20px */
+}
 :root {
     --advanced-blue-gray: #55739f;
     --light-orange: #ffa500;
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
-    font-size: 25px!important; /* 将根字体大小设置为20px */
+
 }
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
@@ -56,7 +59,7 @@ h3::before {
 /* 四级标题字体为斜体，浅橙色，字体大小为26 */
 h4 {
     font-style: italic!important;
-    color: #F8F8F8!important;
+    color: white!important;
     font-size: 2.2rem!important;
     font-weight: bold;
 }
