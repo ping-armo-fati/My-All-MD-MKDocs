@@ -5,7 +5,7 @@
     --light-orange: #ffa500;
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
-    font-size: 20px; /* 将根字体大小设置为20px */
+    font-size: 25px; /* 将根字体大小设置为20px */
 }
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
@@ -16,7 +16,7 @@ h1, h2, h3, h4 {
 
 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bolder;
     color: #000000!important;
 }
@@ -26,7 +26,7 @@ h2 {
     text-align: left;
     background-color: var(--advanced-blue-gray);
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     display: block;
     padding: 16px;
     border-radius: 16px;
@@ -38,7 +38,7 @@ h2 {
 
 /* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
 h3 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     padding-left: 3.6rem;
     position: relative;
 }
@@ -56,8 +56,8 @@ h3::before {
 /* 四级标题字体为斜体，浅橙色，字体大小为26 */
 h4 {
     font-style: italic!important;
-    color: var(--light-orange)!important;
-    font-size: 1.6rem;
+    color: yellow!important;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
