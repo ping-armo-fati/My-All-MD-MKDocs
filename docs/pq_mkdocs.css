@@ -20,22 +20,47 @@ html{
     background: none; /* 移除默认背景，以便看到底纹 */
 }
 
-.md-nav__item--nested > .md-nav__link {
-    background-color: transparent; /* 重置背景色 */
+/* 重置导航栏的背景 */
+.md-nav {
+    background: none;
 }
 
-/* 循环底纹颜色 */
-.md-nav--primary .md-nav__item--nested:nth-child(4n+1) > .md-nav__link {
+/* 重置链接背景色为透明 */
+.md-nav__link {
+    background-color: transparent;
+}
+
+.md-nav--primary .md-nav__item {
     background-color: var(--level-1-bg);
 }
-.md-nav--primary .md-nav__item--nested:nth-child(4n+2) > .md-nav__link {
+
+.md-nav--primary .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-2-bg);
 }
-.md-nav--primary .md-nav__item--nested:nth-child(4n+3) > .md-nav__link {
+
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-3-bg);
 }
-.md-nav--primary .md-nav__item--nested:nth-child(4n) > .md-nav__link {
+
+
+/* 第四级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-4-bg);
+}
+
+/* 第五级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-1-bg);
+}
+
+/* 第六级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-2-bg);
+}
+
+/* 第七级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-3-bg);
 }
 
 /* 设置激活链接的颜色 */
@@ -105,11 +130,7 @@ body {
     font-family: 'Merriweather', '等线', serif;
 }
 
-/* 区块引用：英文：手写体 中文：楷体 */
-blockquote {
-    font-family: 'Comic Sans MS', '楷体', cursive!important;
-    background-color: #ffffcc!important;
-}
+
 /*段落*/
 p {
     font-size: 1.2rem;
@@ -132,6 +153,11 @@ ul ul ul ul, ol ol ol ol {
     font-size: 0.6rem!important;
 }
 
+/* 区块引用：英文：手写体 中文：楷体 */
+blockquote {
+    font-family: 'Comic Sans MS', '楷体', cursive!important;
+    background-color: #ffffcc!important;
+}
 /*表格*/
  /* table */
  table
