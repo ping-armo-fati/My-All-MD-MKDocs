@@ -18,9 +18,6 @@ html{
 /* 设置不同级别导航链接的底纹颜色 */
 .md-nav {
     background: none; /* 移除默认背景，以便看到底纹 */
-    padding-left: 1.5rem;
-    border-radius: 0.5rem;
-
 }
 
 /* 重置链接背景色为透明 */
@@ -32,35 +29,49 @@ html{
 
 .md-nav--primary .md-nav__item {
     background-color: var(--level-1-bg);
+        padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-2-bg);
+        padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-3-bg);
+        padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 
 /* 第四级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-4-bg);
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 /* 第五级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-1-bg);
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 /* 第六级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-2-bg);
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 /* 第七级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-3-bg);
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 /* 设置激活链接的颜色 */
