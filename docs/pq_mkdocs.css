@@ -162,7 +162,7 @@ blockquote {
 table {
     width: 95%; /* 表格宽度为容器宽度的95%，如果需要更宽，可以调整 */
     max-width: 100%; /* 表格最大宽度为100%，超过部分可以出现滚动条 */
-    margin: 20px auto; /* 居中显示，如果宽度设为100%，可以去掉auto */
+    margin: 5px auto; /* 居中显示，如果宽度设为100%，可以去掉auto */
     border-collapse: collapse; /* 边框合并 */
     text-align: center; /* 文本居中对齐 */
     font-family: 'Merriweather', '等线', serif; /* 字体设置 */
