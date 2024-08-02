@@ -1,20 +1,54 @@
-/* 尚未调试成功 */
-/* 高级蓝灰色 */
 html{
     font-size: 25px!important; /* 将根字体大小设置为20px */
 }
+/* 定义颜色变量 */
 :root {
+    --level-1-bg: #55739f;
+    --level-2-bg: #00696B;
+    --level-3-bg: #FFFFE0;
+    --level-4-bg: #FFA07A;
+    --active-link-color: #FFD1DC;
+
     --advanced-blue-gray: #55739f;
     --light-orange: #ffa500;
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
-
 }
+/* 设置导航栏 */
+/* 设置不同级别导航链接的底纹颜色 */
+.md-nav {
+    background: none; /* 移除默认背景，以便看到底纹 */
+}
+
+.md-nav__item--nested > .md-nav__link {
+    background-color: transparent; /* 重置背景色 */
+}
+
+/* 循环底纹颜色 */
+.md-nav--primary .md-nav__item--nested:nth-child(4n+1) > .md-nav__link {
+    background-color: var(--level-1-bg);
+}
+.md-nav--primary .md-nav__item--nested:nth-child(4n+2) > .md-nav__link {
+    background-color: var(--level-2-bg);
+}
+.md-nav--primary .md-nav__item--nested:nth-child(4n+3) > .md-nav__link {
+    background-color: var(--level-3-bg);
+}
+.md-nav--primary .md-nav__item--nested:nth-child(4n) > .md-nav__link {
+    background-color: var(--level-4-bg);
+}
+
+/* 设置激活链接的颜色 */
+.md-nav__link--active {
+    background-color: var(--active-link-color);
+    color: inherit; /* 确保文本颜色不受背景色影响 */
+}
+
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
 h1, h2, h3, h4 {
     color: var(--advanced-blue-gray);
-    font-family: 'Roboto','等线', serif;
+    font-family: 'PingFang SC','等线', serif;
 }
 
 h1 {
@@ -73,7 +107,7 @@ body {
 
 /* 区块引用：英文：手写体 中文：楷体 */
 blockquote {
-    font-family: 'Comic Sans MS', '楷体', cursive;
+    font-family: 'Comic Sans MS', '楷体', cursive!important;
     background-color: #ffffcc!important;
 }
 /*段落*/
@@ -97,6 +131,7 @@ ul ul ul, ol ol ol {
 ul ul ul ul, ol ol ol ol {
     font-size: 0.6rem!important;
 }
+
 /*表格*/
  /* table */
  table
@@ -119,7 +154,7 @@ ul ul ul ul, ol ol ol ol {
     -webkit-transition: all 0.3s linear;
 }
  table td {
-    font-family: 'Consolas', '等线', sans-serif;
+    font-family: 'PingFang SC', '等线', sans-serif;
 }
  table thead th
 {
