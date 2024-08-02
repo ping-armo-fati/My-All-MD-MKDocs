@@ -19,8 +19,8 @@ h1, h2, h3, h4 {
 
 h1 {
     text-align: center;
-    font-size: 4.5rem!important;
-    font-weight: bolder;
+    font-size: 2.8rem!important;
+    font-weight: bold!important;
     color: #000000!important;
 }
 
@@ -29,7 +29,7 @@ h2 {
     text-align: left;
     background-color: var(--advanced-blue-gray);
     color: white;
-    font-size: 2rem!important;
+    font-size: 1.8rem!important;
     display: block;
     padding: 16px;
     border-radius: 16px;
@@ -41,7 +41,7 @@ h2 {
 
 /* 三级标题字体更小，蓝灰色字体，前面有一个蓝灰色色块用于区分 */
 h3 {
-    font-size: 1.8rem!important;
+    font-size: 1.4rem!important;
     padding-left: 3.6rem;
     position: relative;
 }
@@ -60,7 +60,7 @@ h3::before {
 h4 {
     font-style: italic!important;
     color: white!important;
-    font-size: 1.6rem!important;
+    font-size: 1.4rem!important;
     font-weight: bold;
 }
 
@@ -79,23 +79,23 @@ blockquote {
 /*段落*/
 p {
     font-size: 1.2rem;
-    font-family: 'Consolas', '等线', serif!important;
+    font-family: 'Merriweather', '等线', serif!important;
 }
 /*列表*/
 ul, ol {
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
 }
 
 ul ul, ol ol {
-    font-size: 1rem;
+    font-size: 1rem!important;
 }
 
 ul ul ul, ol ol ol {
-    font-size: 0.8rem;
+    font-size: 0.8rem!important;
 }
 
 ul ul ul ul, ol ol ol ol {
-    font-size: 0.6rem;
+    font-size: 0.6rem!important;
 }
 /*表格*/
  /* table */
@@ -104,7 +104,7 @@ ul ul ul ul, ol ol ol ol {
     width: 95%;
     border-collapse: collapse;
     text-align: center;
-    font-family: 'Consolas', '等线', sans-serif;
+    font-family: 'Merriweather', '等线', serif;
     margin: 20px;
 }
  table td, table th
