@@ -158,81 +158,62 @@ blockquote {
     font-family: 'Comic Sans MS', '楷体', cursive!important;
     background-color: #ffffcc!important;
 }
-/*表格*/
- /* table */
- table
-{
-    width: 95%;
-    border-collapse: collapse;
-    text-align: center;
-    font-family: 'Merriweather', '等线', serif;
-    margin: 20px;
+/* 表格整体样式 */
+table {
+    width: 95%; /* 表格宽度为容器宽度的95%，如果需要更宽，可以调整 */
+    max-width: 100%; /* 表格最大宽度为100%，超过部分可以出现滚动条 */
+    margin: 20px auto; /* 居中显示，如果宽度设为100%，可以去掉auto */
+    border-collapse: collapse; /* 边框合并 */
+    text-align: center; /* 文本居中对齐 */
+    font-family: 'Merriweather', '等线', serif; /* 字体设置 */
+    overflow-x: auto; /* 当内容超出时，允许水平滚动 */
 }
- table td, table th
-{
-    border: 1px solid transparent;
-    color: rgb(18, 18, 18);
-    height: 30px;
-    padding: 10px;
-    border-radius: .5em;
-    transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
+
+/* 表格单元格和表头的通用样式 */
+table td, table th {
+    border: 1px solid transparent; /* 边框为1像素，颜色透明 */
+    color: rgb(18, 18, 18); /* 文字颜色 */
+    height: 30px; /* 高度为30px */
+    padding: 10px; /* 内边距为10px */
+    border-radius: .5em; /* 边框圆角半径为0.5em */
+    transition: all 0.3s linear; /* 过渡效果 */
 }
- table td {
-    font-family: 'PingFang SC', '等线', sans-serif;
+
+/* 表格单元格的字体设置 */
+table td {
+    font-family: 'PingFang SC', '等线', sans-serif; /* 无衬线字体 */
+    font-size: 0.9rem; /* 内容字体大小 */
 }
- table thead th
-{
-    background-color: var(--advanced-blue-gray);
-    font-size: 25px;
-    color: white;
-    font-weight: bolder;
-    width: 100px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
+
+/* 表头单元格的样式 */
+table thead th {
+    background-color: teal; /* 第一行背景色为teal */
+    font-size: 1.1rem; /* 表头字体大小 */
+    color: white; /* 文字颜色为白色 */
+    font-weight: bold; /* 字体加粗 */
+    text-align: center; /* 文本居中对齐 */
+    vertical-align: middle; /* 垂直居中对齐 */
+    padding: 10px; /* 内边距为10px */
 }
-table tr:nth-child(odd)
-{
-    background: rgba(211, 211, 211, 0.6);
-}
-table tr:nth-child(even)
-{
-    background: rgba(128, 128, 128, 0.6);
-}
+
+/* 鼠标悬浮在单元格上时的样式 */
 table td:hover {
-  background-color: magenta!important;
-  color: white !important;
-  box-shadow: 0 0 10px 5px blue);
-  transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
+  background-color: pink; /* 被选中的强调色为pink */
+  color: white; /* 文字颜色为白色 */
+  box-shadow: 0 0 10px 5px rgba(0, 128, 128, 0.5); /* 鼠标悬浮时的阴影效果 */
+  transition: all 0.3s linear; /* 过渡效果 */
 }
 
-
-/* mk订制_表格设置 */
-.md-typeset table:not([class]) {
-    width: 100%; /* 表格宽度设为100% */
-    margin: 1em 0; /* 表格上下边距 */
+/* 确保表格在页面中居中 */
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* 使表格内容居中显示 */
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td {
-    text-align: center; /* 内容水平居中 */
-    padding: 8px; /* 单元格内边距 */
+/* 根据页面宽度调整表格宽度，如果表格内容超出可视区域宽度，允许水平滚动 */
+@media screen and (max-width: 768px) {
+    table {
+        width: auto;
+        overflow-x: auto;
+    }
 }
-
-/* 调整表格边框和单元格间距 */
-.md-typeset table:not([class]) {
-    border-collapse: collapse; /* 边框合并为一个单一的边框 */
-    border-spacing: 0; /* 单元格间距为0 */
-    border: 1px solid #ddd; /* 表格边框颜色 */
-}
-
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td {
-    border: 1px solid #ddd; /* 单元格边框颜色 */
-}
-
