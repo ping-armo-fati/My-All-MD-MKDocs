@@ -35,32 +35,32 @@ html{
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-2-bg);
+    background-color: var(--level-2-bg)!important;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-3-bg);
+    background-color: var(--level-3-bg)!important;
 }
 
 
 /* 第四级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-4-bg);
+    background-color: var(--level-4-bg)!important;
 }
 
 /* 第五级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-1-bg);
+    background-color: var(--level-1-bg)!important;
 }
 
 /* 第六级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-2-bg);
+    background-color: var(--level-2-bg)!important;
 }
 
 /* 第七级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-3-bg);
+    background-color: var(--level-3-bg)!important;
 }
 
 /* 设置激活链接的颜色 */
