@@ -18,16 +18,14 @@ html{
 /* 设置不同级别导航链接的底纹颜色 */
 .md-nav {
     background: none; /* 移除默认背景，以便看到底纹 */
-}
 
-/* 重置导航栏的背景 */
-.md-nav {
-    background: none;
 }
 
 /* 重置链接背景色为透明 */
 .md-nav__link {
     background-color: transparent;
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .md-nav--primary .md-nav__item {
@@ -35,32 +33,32 @@ html{
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-2-bg)!important;
+    background-color: var(--level-2-bg);
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-3-bg)!important;
+    background-color: var(--level-3-bg);
 }
 
 
 /* 第四级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-4-bg)!important;
+    background-color: var(--level-4-bg);
 }
 
 /* 第五级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-1-bg)!important;
+    background-color: var(--level-1-bg);
 }
 
 /* 第六级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-2-bg)!important;
+    background-color: var(--level-2-bg);
 }
 
 /* 第七级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-3-bg)!important;
+    background-color: var(--level-3-bg);
 }
 
 /* 设置激活链接的颜色 */
@@ -74,6 +72,7 @@ html{
 h1, h2, h3, h4 {
     color: var(--advanced-blue-gray);
     font-family: 'PingFang SC','等线', serif;
+    font-weight: bold!important;
 }
 
 h1 {
@@ -175,7 +174,7 @@ table td, table th {
     color: rgb(18, 18, 18); /* 文字颜色 */
     height: 30px; /* 高度为30px */
     padding: 10px; /* 内边距为10px */
-    border-radius: .5em; /* 边框圆角半径为0.5em */
+    border-radius: .3em; /* 边框圆角半径为0.5em */
     transition: all 0.3s linear; /* 过渡效果 */
 }
 
@@ -188,7 +187,7 @@ table td {
 /* 表头单元格的样式 */
 table thead th {
     background-color: teal; /* 第一行背景色为teal */
-    font-size: 1.1rem; /* 表头字体大小 */
+    font-size: 1rem; /* 表头字体大小 */
     color: white; /* 文字颜色为白色 */
     font-weight: bold; /* 字体加粗 */
     text-align: center; /* 文本居中对齐 */
