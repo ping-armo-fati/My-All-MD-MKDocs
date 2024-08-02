@@ -29,19 +29,16 @@ html{
 
 .md-nav--primary .md-nav__item {
     background-color: var(--level-1-bg);
-        padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-2-bg);
-        padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
     background-color: var(--level-3-bg);
-        padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
@@ -49,28 +46,24 @@ html{
 /* 第四级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-4-bg);
-    padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
 /* 第五级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-1-bg);
-    padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
 /* 第六级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-2-bg);
-    padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
 /* 第七级导航链接 */
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
     background-color: var(--level-3-bg);
-    padding-left: 1.5rem;
     border-radius: 0.5rem;
 }
 
