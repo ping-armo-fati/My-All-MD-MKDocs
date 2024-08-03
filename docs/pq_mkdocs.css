@@ -14,10 +14,11 @@ html{
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
 
-    --top-level-bg: #ffffe0;    /* 淡黄 */
+    --top-level-bg: #90E2E0;    /* 淡黄 */
     --second-level-bg: #f5f5f5;  /* 浅蓝灰 */
     --third-level-bg: #008080;   /* Teal */
     --fourth-level-bg: #e6e6fa;    /* 浅紫色，即淡薰衣草色 */
+    --teal: #008080
 }
 /* 设置导航栏 */
 /* 设置不同级别导航链接的底纹颜色 */
@@ -60,8 +61,8 @@ html{
 
 /* 设置激活链接的颜色 */
 .md-nav__link--active {
-    background-color: var(--active-link-color);
-    color: inherit; /* 确保文本颜色不受背景色影响 */
+    background-color: var(--teal);
+    color: inherit;
 }
 
 
