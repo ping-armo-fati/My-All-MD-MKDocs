@@ -33,8 +33,8 @@ html{
 }
 
 .md-nav--primary .md-nav__item {
-    background-color: #90E2E0;
-    border-radius: 0.7rem;
+    background-color: #D3D3D3;
+    border-radius: 0.2rem;
 }
 
 /* 最顶级导航栏底纹颜色为Teal */
@@ -43,20 +43,20 @@ html{
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--second-level-bg);
+    background-color: var(--second-level-bg)!important;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--third-level-bg);
+    background-color: var(--third-level-bg)!important;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--fourth-level-bg);
+    background-color: var(--fourth-level-bg)!important;
 }
 
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link,
 .md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--top-level-bg); /* 与最顶级导航栏颜色相同 */
+    background-color: var(--top-level-bg)!important; /* 与最顶级导航栏颜色相同 */
 }
 
 /* 设置激活链接的颜色 */
@@ -155,6 +155,11 @@ blockquote {
     font-family: 'Comic Sans MS', '楷体', cursive!important;
     background-color: #ffffcc!important;
 }
+
+blockquote p {
+    font-family: 'Comic Sans MS', '楷体', cursive!important;
+}
+
 /* 表格整体样式 */
 table {
     width: 95%; /* 表格宽度为容器宽度的95%，如果需要更宽，可以调整 */
