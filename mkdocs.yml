@@ -616,7 +616,10 @@ markdown_extensions:
   - def_list
 
 extra_css:
-  - pq_mkdocs.css
+  - css/body_main.css
+  - css/code.css
+  - css/nav.css
+  - css/table.css
 
 
 
