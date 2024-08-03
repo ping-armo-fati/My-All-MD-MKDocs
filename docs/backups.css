@@ -1,0 +1,50 @@
+.md-nav {
+    background: none; /* 移除默认背景，以便看到底纹 */
+}
+
+/* 重置链接背景色为透明 */
+.md-nav__link {
+    background-color: transparent;
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.md-nav--primary .md-nav__item {
+    background-color: #90E2E0;
+    border-radius: 0.7rem;
+}
+
+.md-nav--primary .md-nav__item--nested > .md-nav__list {
+    background-color: var(--level-2-bg)!important;
+    border-radius: 0.7rem;
+}
+
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
+    background-color: var(--level-3-bg)!important;
+    border-radius: 0.7rem;
+}
+
+
+/* 第四级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-4-bg)!important;
+    border-radius: 0.7rem;
+}
+
+/* 第五级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-1-bg)!important;
+    border-radius: 0.7rem;
+}
+
+/* 第六级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-2-bg)!important;
+    border-radius: 0.7rem;
+}
+
+/* 第七级导航链接 */
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
+    background-color: var(--level-3-bg)!important;
+    border-radius: 0.7rem;
+}

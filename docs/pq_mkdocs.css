@@ -13,6 +13,11 @@ html{
     --light-orange: #ffa500;
     --light-beige: #f5f5dc; /* 浅米色 */
     --light-purple:#D8BFD8;
+
+    --top-level-bg: #008080;    /* Teal颜色 */
+    --second-level-bg: #f5f5f5;  /* 浅蓝灰 */
+    --third-level-bg: #ffffe0;   /* 淡黄 */
+    --fourth-level-bg: #e6e6fa;    /* 浅紫色，即淡薰衣草色 */
 }
 /* 设置导航栏 */
 /* 设置不同级别导航链接的底纹颜色 */
@@ -29,42 +34,29 @@ html{
 
 .md-nav--primary .md-nav__item {
     background-color: #90E2E0;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-2-bg)!important;
-    border-radius: 0.5rem;
+/* 最顶级导航栏底纹颜色为Teal */
+.md-nav--primary .md-nav__item > .md-nav__link {
+    background-color: var(--top-level-bg);
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list {
-    background-color: var(--level-3-bg)!important;
-    border-radius: 0.5rem;
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--second-level-bg);
 }
 
-
-/* 第四级导航链接 */
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-4-bg)!important;
-    border-radius: 0.5rem;
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--third-level-bg);
 }
 
-/* 第五级导航链接 */
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-1-bg)!important;
-    border-radius: 0.5rem;
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--fourth-level-bg);
 }
 
-/* 第六级导航链接 */
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-2-bg)!important;
-    border-radius: 0.5rem;
-}
-
-/* 第七级导航链接 */
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item {
-    background-color: var(--level-3-bg)!important;
-    border-radius: 0.5rem;
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--top-level-bg); /* 与最顶级导航栏颜色相同 */
 }
 
 /* 设置激活链接的颜色 */
@@ -139,7 +131,7 @@ body {
 /*段落*/
 p {
     font-size: 1.2rem;
-    font-family: 'Merriweather', '等线', serif!important;
+    font-family: 'Merriweather', '等线', serif;
 }
 /*列表*/
 ul, ol {
