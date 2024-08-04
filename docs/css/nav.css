@@ -10,32 +10,27 @@
     border-radius: 0.5rem;
 }
 
-.md-nav--primary .md-nav__item {
+.md-nav__item {
     background-color: #F8F8F8; /*浅灰*/
     border-radius: 0.2rem;
 }
 
-/* 最顶级导航栏底纹颜色为Teal */
-.md-nav--primary .md-nav__item > .md-nav__link {
+.md-nav__item > .md-nav__link {
     background-color: var(--top-level-bg);
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--second-level-bg)!important;
+.md-nav__item md-nav__item--nested> .md-nav__link {
+    background-color: var(--second-level-bg);
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--third-level-bg)!important;
+.md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--third-level-bg);
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--fourth-level-bg)!important;
+.md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--fourth-level-bg);
 }
 
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link,
-.md-nav--primary .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--top-level-bg)!important; /* 与最顶级导航栏颜色相同 */
-}
 
 /* 设置激活链接的颜色 */
 .md-nav__link--active {
