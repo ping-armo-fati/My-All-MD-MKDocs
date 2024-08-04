@@ -1,22 +1,27 @@
 /* 表格整体样式 */
 table {
-    width: 95%; /* 表格宽度为容器宽度的95%，如果需要更宽，可以调整 */
-    max-width: 100%; /* 表格最大宽度为100%，超过部分可以出现滚动条 */
-    margin: 5px auto; /* 居中显示，如果宽度设为100%，可以去掉auto */
+    width: 85%; /* 表格宽度为容器宽度的95%，如果需要更宽，可以调整 */
+    max-width: 85%; /* 表格最大宽度为100%，超过部分可以出现滚动条 */
+    margin: 0.2rem auto; /* 居中显示，如果宽度设为100%，可以去掉auto */
     border-collapse: collapse; /* 边框合并 */
-    text-align: center; /* 文本居中对齐 */
+    text-align: center!important; /* 文本居中对齐 */
     font-family: 'Merriweather', '等线', serif; /* 字体设置 */
     overflow-x: auto; /* 当内容超出时，允许水平滚动 */
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 表格单元格和表头的通用样式 */
 table td, table th {
     border: 1px solid transparent; /* 边框为1像素，颜色透明 */
     color: rgb(18, 18, 18); /* 文字颜色 */
-    height: 30px; /* 高度为30px */
-    padding: 10px; /* 内边距为10px */
+    height: 1.4rem; /* 高度为30px */
+    padding: 0.5rem; /* 内边距为10px */
     border-radius: .3em; /* 边框圆角半径为0.5em */
     transition: all 0.3s linear; /* 过渡效果 */
+
+    white-space: nowrap; /* 防止文本换行 */
 }
 
 /* 表格单元格的字体设置 */
@@ -33,7 +38,7 @@ table thead th {
     font-weight: bold; /* 字体加粗 */
     text-align: center; /* 文本居中对齐 */
     vertical-align: middle; /* 垂直居中对齐 */
-    padding: 10px; /* 内边距为10px */
+    padding: 0.4rem; /* 内边距为10px */
 }
 
 /* 鼠标悬浮在单元格上时的样式 */
@@ -46,8 +51,7 @@ table td:hover {
 
 /* 确保表格在页面中居中 */
 table {
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 /* 根据页面宽度调整表格宽度，如果表格内容超出可视区域宽度，允许水平滚动 */

@@ -581,6 +581,7 @@ repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
 
 theme:
   name: material
+  logo: css/shido.jpg
   feature:
     - navigation.tabs
     - navigation.tabs.sticky
