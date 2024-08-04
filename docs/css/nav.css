@@ -6,7 +6,6 @@
 
 /* 重置链接背景色为透明 */
 .md-nav__link {
-    background-color: transparent;
     padding-left: 0.8rem;
     border-radius: 0.5rem;
 }
