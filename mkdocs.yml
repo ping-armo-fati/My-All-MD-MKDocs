@@ -1,4 +1,4 @@
-site_name: MarkDown Notes
+site_name: MarkDown Notes PQ
 
 nav:
   - Home: 'Home.md'
@@ -582,6 +582,8 @@ repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
 theme:
   name: material
   logo: css/shido.jpg
+  favicon: css/shido.jpg
+
   feature:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -593,7 +595,11 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.sticky
-    - copy_code
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - content.code.select
+
 
 
   palette:
@@ -614,7 +620,25 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
-  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - css/body_main.css
@@ -622,6 +646,9 @@ extra_css:
   - css/nav.css
   - css/table.css
 
-
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com
 
 

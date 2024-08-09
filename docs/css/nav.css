@@ -6,6 +6,7 @@
 
 /* 重置链接背景色为透明 */
 .md-nav__link {
+    background: transparent;
     padding-left: 0.8rem;
     border-radius: 0.5rem;
 }
@@ -15,25 +16,12 @@
     border-radius: 0.2rem;
 }
 
-.md-nav__item > .md-nav__link {
+.md-nav__primary > .md-nav__list > .md-nav__item {
     background-color: var(--top-level-bg);
 }
 
-.md-nav__item md-nav__item--nested> .md-nav__link {
-    background-color: var(--second-level-bg);
-}
-
-.md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--third-level-bg);
-}
-
-.md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
-    background-color: var(--fourth-level-bg);
-}
-
-
 /* 设置激活链接的颜色 */
-.md-nav__link--active {
-    background-color: #f5f5f5!important;
+.md-nav__item--active > .md-nav__link {
+    background-color: #90e2e0!important;
     color: inherit;
 }

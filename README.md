@@ -76,3 +76,12 @@ features:
 # 锚跟随
   - toc.follow
 ```
+
+- 设置代码高亮
+
+```shell
+# update mkdocs
+pip install --upgrade mkdocs
+# install stuff
+pip install pygments
+```

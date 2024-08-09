@@ -109,6 +109,7 @@ ul ul ul ul, ol ol ol ol {
 blockquote {
     font-family: 'Comic Sans MS', '楷体', cursive!important;
     background-color: #ffffcc!important;
+    overflow-x:auto;
 }
 
 blockquote p {
