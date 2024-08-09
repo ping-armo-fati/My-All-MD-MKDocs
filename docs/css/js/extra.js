@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         button.className = 'copy-button';
 
         // 使用 Material 风格的图标
-        button.innerHTML = '<i class="material-icons">content_copy</i>'; // 使用 Material Icons
+        button.innerHTML = '<i class="fas fa-copy"></i>'; // 使用 Font Awesome 图标
+
 
         button.onclick = () => {
             navigator.clipboard.writeText(codeBlock.innerText).then(() => {
