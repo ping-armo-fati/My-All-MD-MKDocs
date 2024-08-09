@@ -620,25 +620,16 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
-  - pymdownx.highlight:
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+      linenums: true
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-
   - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: True
+
 
 extra_css:
   - css/body_main.css
