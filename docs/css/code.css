@@ -1,20 +1,30 @@
 .copy-button {
-    background-color: #4CAF50; /* 绿色 */
-    color: white;
+    background-color: transparent; /* 背景透明 */
     border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0;
     cursor: pointer;
-    border-radius: 5px;
-    position: relative; /* 使其相对定位 */
-    z-index: 100; /* 确保在代码块上方 */
+    outline: none;
+    padding: 0;
+    transition: background-color 0.3s;
 }
 
 .copy-button:hover {
-    background-color: #45a049; /* 悬停时的颜色 */
-    transform: scale(1.05); /* 悬停时放大 */
-    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    background-color: rgba(0, 0, 0, 0.1); /* 悬停时的高亮 */
+    border-radius: 50%; /* 圆形按钮 */
+}
+
+.material-icons {
+    font-size: 24px; /* 图标大小 */
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px; /* 距离底部 */
+    right: 20px; /* 距离右侧 */
+    background-color: #323232; /* 背景色 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.5s;
 }
