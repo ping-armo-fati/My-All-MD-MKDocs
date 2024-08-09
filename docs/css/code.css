@@ -1,24 +1,25 @@
 pre {
     position: relative; /* 为了使伪元素相对于 pre 定位 */
-    border: 1px solid #ddd; /* 代码块边框 */
+    border: 1px solid #f5f5dc; /* 代码块边框 */
     border-radius: 5px; /* 圆角 */
     margin-bottom: 20px; /* 底部间距 */
-    padding-top: 30px; /* 给伪元素留出空间 */
+    padding-top: 2.5rem; /* 给伪元素留出空间 */
 }
 
-pre::before {
-    content: ''; /* 伪元素内容为空 */
+pre:before {
+    content:'';
+    font-family: 'Lucida calligraphy'; /* 修改字体为 Brush Script */
     position: absolute; /* 绝对定位 */
     top: 0; /* 在顶部 */
     left: 0; /* 在左侧 */
     right: 0; /* 在右侧 */
-    height: 30px; /* 高度 */
-    background-color: #333; /* 背景颜色 */
-    color: white; /* 字体颜色 */
+    height: 2.5rem; /* 高度 */
+    background-color: #f5f5dc; /* 背景颜色 */
+    color: #8B0000; /* 字体颜色 */
     display: flex; /* 使用 flexbox 布局 */
     justify-content: space-between; /* 左右对齐 */
     align-items: center; /* 垂直居中 */
-    padding: 0 10px; /* 内边距 */
+    padding: 0 1rem; /* 内边距 */
     border-top-left-radius: 5px; /* 圆角 */
     border-top-right-radius: 5px; /* 圆角 */
     border-bottom: 1px solid #ddd; /* 边框底部 */
@@ -33,8 +34,8 @@ pre::before {
     border: none;
     cursor: pointer;
     outline: none;
-    color: white; /* 图标颜色 */
-    opacity: 0.7; /* 默认不显眼 */
+    color: transparent; /* 图标颜色 */
+    opacity: 0.2; /* 默认不显眼 */
     transition: background-color 0.3s, opacity 0.3s; /* 过渡效果 */
 }
 
@@ -43,6 +44,784 @@ pre::before {
     opacity: 1; /* 悬停时显眼 */
 }
 
-.copy-button i {
-    font-size: 20px; /* 图标大小 */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000; /* 确保在最上层 */
 }
+
+
+div.language-TXT.highlight > pre:before,
+div.language-txt.highlight > pre:before {
+    content: 'TXT';
+}
+
+/* 以下为代码语言显示语句 */
+/* —————————————————————————————————————————————————————————A————————————————————————————————————————————————————————— */
+div.language-ABAP.highlight > pre:before,
+div.language-abap.highlight > pre:before {
+  content: 'ABAP';
+}
+
+div.language-apl.highlight > pre:before,
+div.language-APL.highlight > pre:before {
+  content: 'APL';
+}
+
+div.language-asciiarmor.highlight > pre:before,
+div.language-ASCIIARMOR.highlight > pre:before {
+  content: 'ASCII-Armor';
+}
+
+div.language-ASN.1.highlight > pre:before,
+div.language-asn.1.highlight > pre:before {
+  content: 'ASN.1';
+}
+
+div.language-asp.highlight > pre:before,
+div.language-ASP.highlight > pre:before {
+  content: 'ASP';
+}
+
+/* —————————————————————————————————————————————————————————B————————————————————————————————————————————————————————— */
+div.language-bash.highlight > pre:before,
+div.language-Bash.highlight > pre:before {
+  content: 'Bash';
+}
+
+div.language-basic.highlight > pre:before,
+div.language-Basic.highlight > pre:before {
+  content: 'BASIC';
+}
+
+
+/* —————————————————————————————————————————————————————————C————————————————————————————————————————————————————————— */
+div.language-C.highlight > pre:before,
+div.language-c.highlight > pre:before {
+  content: 'C';
+}
+
+
+div.language-csharp.highlight > pre:before,
+div.language-CSharp.highlight > pre:before {
+  content: 'C#';
+}
+
+
+div.language-CPP.highlight > pre:before,
+div.language-cpp.highlight > pre:before {
+  content: 'C++';
+}
+
+div.language-cassandra.highlight > pre:before,
+div.language-Cassandra.highlight > pre:before {
+  content: 'Cassandra';
+}
+
+div.language-ceylon.highlight > pre:before,
+div.language-Ceylon.highlight > pre:before {
+  content: 'Ceylon';
+}
+
+div.language-clike.highlight > pre:before,
+div.language-Clike.highlight > pre:before {
+  content: 'C-like';
+}
+
+div.language-clojure.highlight > pre:before,
+div.language-clojure.highlight > pre:before {
+  content: 'Clojure';
+}
+
+div.language-CMake.highlight > pre:before,
+div.language-cmake.highlight > pre:before {
+  content: 'CMake';
+}
+
+div.language-cobol.highlight > pre:before,
+div.language-COBOL.highlight > pre:before {
+  content: 'COBOL';
+}
+
+div.language-coffeescript.highlight > pre:before,
+div.language-CoffeeScript.highlight > pre:before {
+  content: 'CoffeeScript';
+}
+
+div.language-commonlisp.highlight > pre:before,
+div.language-CommonLisp.highlight > pre:before {
+  content: 'Common Lisp';
+}
+
+div.language-CQL.highlight > pre:before,
+div.language-cql.highlight > pre:before {
+  content: 'CQL';
+}
+
+div.language-crystal.highlight > pre:before,
+div.language-Crystal.highlight > pre:before {
+  content: 'Crystal';
+}
+
+div.language-css.highlight > pre:before,
+div.language-CSS.highlight > pre:before {
+  content: 'CSS';
+}
+
+div.language-cypher.highlight > pre:before,
+div.language-Cypher.highlight > pre:before {
+  content: 'Cypher';
+}
+
+div.language-cython.highlight > pre:before,
+div.language-Cython.highlight > pre:before {
+  content: 'Cython';
+}
+
+
+/* —————————————————————————————————————————————————————————D————————————————————————————————————————————————————————— */
+div.language-D.highlight > pre:before,
+div.language-d.highlight > pre:before {
+  content: 'D';
+}
+
+div.language-dart.highlight > pre:before,
+div.language-Dart.highlight > pre:before {
+  content: 'Dart';
+}
+
+div.language-diff.highlight > pre:before,
+div.language-Diff.highlight > pre:before {
+  content: 'Diff';
+}
+
+div.language-django.highlight > pre:before,
+div.language-Django.highlight > pre:before {
+  content: 'Django';
+}
+
+div.language-dockerfile.highlight > pre:before,
+div.language-Dockerfile.highlight > pre:before {
+  content: 'Dockerfile';
+}
+
+div.language-dtd.highlight > pre:before,
+div.language-DTD.highlight > pre:before {
+  content: 'DTD';
+}
+
+div.language-Dylan.highlight > pre:before,
+div.language-dylan.highlight > pre:before {
+  content: 'Dylan';
+}
+
+
+/* —————————————————————————————————————————————————————————E————————————————————————————————————————————————————————— */
+div.language-elixir.highlight > pre:before,
+div.language-Elixir.highlight > pre:before {
+  content: 'Elixir';
+}
+
+div.language-Elm.highlight > pre:before,
+div.language-elm.highlight > pre:before {
+  content: 'Elm';
+}
+
+div.language-Embedded JS.highlight > pre:before,
+div.language-embeddedjs.highlight > pre:before {
+  content: 'Embedded JS';
+}
+
+div.language-erlang.highlight > pre:before,
+div.language-Erlang.highlight > pre:before {
+  content: 'Erlang';
+}
+
+
+/* —————————————————————————————————————————————————————————F————————————————————————————————————————————————————————— */
+div.language-F#.highlight > pre:before,
+div.language-f#.highlight > pre:before,
+div.language-fsharp.highlight > pre:before,
+div.language-Fsharp.highlight > pre:before {
+  content: 'F#';
+}
+
+div.language-flow.highlight > pre:before,
+div.language-Flow.highlight > pre:before {
+  content: 'Flow';
+}
+
+div.language-forth.highlight > pre:before,
+div.language-Forth.highlight > pre:before {
+  content: 'Forth';
+}
+
+div.language-fortran.highlight > pre:before,
+div.language-Fortran.highlight > pre:before {
+  content: 'Fortran';
+}
+
+
+/* —————————————————————————————————————————————————————————G————————————————————————————————————————————————————————— */
+div.language-gas.highlight > pre:before,
+div.language-Gas.highlight > pre:before {
+  content: 'Gas';
+}
+
+div.language-gfm.highlight > pre:before,
+div.language-GFW.highlight > pre:before {
+  content: 'GFW';
+}
+
+div.language-gherkin.highlight > pre:before,
+div.language-Gherkin.highlight > pre:before {
+  content: 'Gherkin';
+}
+
+div.language-glsl.highlight > pre:before,
+div.language-GLSL.highlight > pre:before {
+  content: 'GLSL';
+}
+
+div.language-Go.highlight > pre:before,
+div.language-go.highlight > pre:before {
+  content: 'Go';
+}
+
+div.language-Groovy.highlight > pre:before,
+div.language-groovy.highlight > pre:before {
+  content: 'Groovy';
+}
+
+
+/* —————————————————————————————————————————————————————————H————————————————————————————————————————————————————————— */
+div.language-handlebars.highlight > pre:before,
+div.language-Handlebars.highlight > pre:before {
+  content: 'Handlebars';
+}
+
+div.language-haskell.highlight > pre:before,
+div.language-Haskell.highlight > pre:before {
+  content: 'Haskell';
+}
+
+div.language-haxe.highlight > pre:before,
+div.language-Haxe.highlight > pre:before {
+  content: 'Haxe';
+}
+
+div.language-htaccess.highlight > pre:before,
+div.language-Htaccess.highlight > pre:before {
+  content: 'Htaccess';
+}
+
+div.language-html.highlight > pre:before,
+div.language-HTML.highlight > pre:before {
+  content: 'HTML';
+}
+
+div.language-HTTP.highlight > pre:before,
+div.language-http.highlight > pre:before {
+  content: 'HTTP';
+}
+
+div.language-hxml.highlight > pre:before,
+div.language-HXML.highlight > pre:before {
+  content: 'HXML';
+}
+
+
+/* —————————————————————————————————————————————————————————I————————————————————————————————————————————————————————— */
+div.language-IDL.highlight > pre:before,
+div.language-idl.highlight > pre:before {
+  content: 'IDL';
+}
+
+div.language-ini.highlight > pre:before,
+div.language-INI.highlight > pre:before {
+  content: 'INI';
+}
+
+
+/* —————————————————————————————————————————————————————————J————————————————————————————————————————————————————————— */
+div.language-jade.highlight > pre:before,
+div.language-Jade.highlight > pre:before {
+  content: 'Jade';
+}
+
+div.language-java.highlight > pre:before,
+div.language-Java.highlight > pre:before {
+  content: 'Java';
+}
+
+div.language-javascript.highlight > pre:before,
+div.language-JavaScript.highlight > pre:before,
+div.language-JS.highlight > pre:before,
+div.language-js.highlight > pre:before {
+  content: 'JavaScript';
+}
+
+div.language-jinja2.highlight > pre:before,
+div.language-Jinja2.highlight > pre:before {
+  content: 'Jinja2';
+}
+
+div.language-json.highlight > pre:before,
+div.language-JSON.highlight > pre:before {
+  content: 'JSON';
+}
+
+div.language-JSP.highlight > pre:before,
+div.language-jsp.highlight > pre:before {
+  content: 'JSP';
+}
+
+div.language-jsx.highlight > pre:before,
+div.language-JSX.highlight > pre:before {
+  content: 'JSX';
+}
+
+
+/* —————————————————————————————————————————————————————————K————————————————————————————————————————————————————————— */
+div.language-Kotlin.highlight > pre:before,
+div.language-kotlin.highlight > pre:before {
+  content: 'Kotlin';
+}
+
+
+/* —————————————————————————————————————————————————————————L————————————————————————————————————————————————————————— */
+div.language-LATEX.highlight > pre:before,
+div.language-Latex.highlight > pre:before {
+  content: 'LaTeX';
+}
+
+div.language-less.highlight > pre:before,
+div.language-Less.highlight > pre:before {
+  content: 'Less';
+}
+
+div.language-lisp.highlight > pre:before,
+div.language-LISP.highlight > pre:before {
+  content: 'LISP';
+}
+
+div.language-livescript.highlight > pre:before,
+div.language-LiveScript.highlight > pre:before {
+  content: 'LiveScript';
+}
+
+div.language-Lua.highlight > pre:before,
+div.language-lua.highlight > pre:before {
+  content: 'Lua';
+}
+
+
+/* —————————————————————————————————————————————————————————M————————————————————————————————————————————————————————— */
+div.language-makefile.highlight > pre:before,
+div.language-Makefile.highlight > pre:before {
+  content: 'Makefile';
+}
+
+div.language-mariadb.highlight > pre:before,
+div.language-MariaDB.highlight > pre:before {
+  content: 'MariaDB';
+}
+
+div.language-markdown.highlight > pre:before,
+div.language-Markdown.highlight > pre:before {
+  content: 'Markdown';
+}
+
+div.language-mathematica.highlight > pre:before,
+div.language-Mathematica.highlight > pre:before {
+  content: 'Mathematica';
+}
+
+div.language-matlab.highlight > pre:before,
+div.language-MATLAB.highlight > pre:before {
+  content: 'MATLAB';
+}
+
+div.language-mbox.highlight > pre:before,
+div.language-MBOX.highlight > pre:before {
+  content: 'MBOX';
+}
+
+div.language-mermaid.highlight > pre:before,
+div.language-Mermaid.highlight > pre:before {
+  content: 'Mermaid';
+}
+
+div.language-mssql.highlight > pre:before,
+div.language-MSSQL.highlight > pre:before {
+  content: 'MSSQL';
+}
+
+div.language-mysql.highlight > pre:before,
+div.language-MySQL.highlight > pre:before {
+  content: 'MySQL';
+}
+
+
+/* —————————————————————————————————————————————————————————N————————————————————————————————————————————————————————— */
+div.language-nginx.highlight > pre:before,
+div.language-Nginx.highlight > pre:before {
+  content: 'Nginx';
+}
+
+div.language-nim.highlight > pre:before,
+div.language-Nim.highlight > pre:before {
+  content: 'Nim';
+}
+
+div.language-nsis.highlight > pre:before,
+div.language-NSIS.highlight > pre:before {
+  content: 'NSIS';
+}
+
+
+/* —————————————————————————————————————————————————————————O————————————————————————————————————————————————————————— */
+div.language-objc.highlight > pre:before,
+div.language-Obj-C.highlight > pre:before,
+div.language-objective-c.highlight > pre:before,
+div.language-Objective-C.highlight > pre:before {
+  content: 'Objective-C';
+}
+
+div.language-ocaml.highlight > pre:before,
+div.language-OCaml.highlight > pre:before {
+  content: 'OCaml';
+}
+
+div.language-octave.highlight > pre:before,
+div.language-Octave.highlight > pre:before {
+  content: 'Octave';
+}
+
+div.language-Oz.highlight > pre:before,
+div.language-oz.highlight > pre:before {
+  content: 'Oz';
+}
+
+
+/* —————————————————————————————————————————————————————————P————————————————————————————————————————————————————————— */
+div.language-pascal.highlight > pre:before,
+div.language-Pascal.highlight > pre:before {
+  content: 'Pascal';
+}
+
+div.language-perl.highlight > pre:before,
+div.language-Perl.highlight > pre:before {
+  content: 'Perl';
+}
+
+div.language-perl6.highlight > pre:before,
+div.language-Perl 6.highlight > pre:before {
+  content: 'Perl 6';
+}
+
+div.language-PGP.highlight > pre:before,
+div.language-pgp.highlight > pre:before {
+  content: 'PGP';
+}
+
+div.language-php.highlight > pre:before,
+div.language-PHP.highlight > pre:before {
+  content: 'PHP';
+}
+
+div.language-php+HTML.highlight > pre:before {
+  content: 'PHP+HTML';
+}
+
+div.language-plsql.highlight > pre:before,
+div.language-PL/SQL.highlight > pre:before {
+  content: 'PL/SQL';
+}
+
+div.language-powershell.highlight > pre:before,
+div.language-PowerShell.highlight > pre:before {
+  content: 'PowerShell';
+}
+
+div.language-properties.highlight > pre:before,
+div.language-Properties.highlight > pre:before {
+  content: 'Properties';
+}
+
+div.language-protobuf.highlight > pre:before,
+div.language-Protobuf.highlight > pre:before {
+  content: 'Protobuf';
+}
+
+div.language-pseudodiv.highlight > pre:before,
+div.language-Pseudodiv.highlight > pre:before {
+  content: 'Pseudodiv';
+}
+
+div.language-python.highlight > pre:before,
+div.language-Python.highlight > pre:before {
+  content: 'Python'!important;
+}
+
+div.language-Kotlin.highlight > pre:before,
+div.language-kotlin.highlight > pre:before {
+  content: 'Kotlin';
+}
+
+
+/* —————————————————————————————————————————————————————————Q————————————————————————————————————————————————————————— */
+div.language-Q.highlight > pre:before,
+div.language-q.highlight > pre:before {
+  content: 'Q';
+}
+
+
+/* —————————————————————————————————————————————————————————R————————————————————————————————————————————————————————— */
+div.language-R.highlight > pre:before,
+div.language-r.highlight > pre:before {
+  content: 'R';
+}
+
+div.language-react.highlight > pre:before,
+div.language-kotlin.highlight > pre:before {
+  content: 'React';
+}
+
+div.language-reStructuredText.highlight > pre:before,
+div.language-restructuredtext.highlight > pre:before,
+div.language-rst.highlight > pre:before {
+  content: 'reStructuredText';
+}
+
+div.language-ruby.highlight > pre:before,
+div.language-Ruby.highlight > pre:before {
+  content: 'Ruby';
+}
+
+div.language-Rust.highlight > pre:before,
+div.language-rust.highlight > pre:before {
+  content: 'Rust';
+}
+
+
+/* —————————————————————————————————————————————————————————S————————————————————————————————————————————————————————— */
+div.language-SAS.highlight > pre:before,
+div.language-sas.highlight > pre:before {
+  content: 'SAS';
+}
+
+div.language-scala.highlight > pre:before,
+div.language-Scala.highlight > pre:before {
+  content: 'Scala';
+}
+
+div.language-scheme.highlight > pre:before,
+div.language-Scheme.highlight > pre:before {
+  content: 'Scheme';
+}
+
+div.language-scss.highlight > pre:before,
+div.language-Sass.highlight > pre:before {
+  content: 'Sass';
+}
+
+div.language-sequence.highlight > pre:before,
+div.language-Sequence.highlight > pre:before {
+  content: 'Sequence';
+}
+
+div.language-shell.highlight > pre:before {
+  content: 'Shell';
+}
+
+div.language-smalltalk.highlight > pre:before,
+div.language-Smalltalk.highlight > pre:before {
+  content: 'Smalltalk';
+}
+
+div.language-solidity.highlight > pre:before,
+div.language-Solidity.highlight > pre:before {
+  content: 'Solidity';
+}
+
+div.language-SPARQL.highlight > pre:before,
+div.language-sparql.highlight > pre:before {
+  content: 'SPARQL';
+}
+
+div.language-spreadsheet.highlight > pre:before,
+div.language-Spreadsheet.highlight > pre:before {
+  content: 'Spreadsheet';
+}
+
+div.language-sql.highlight > pre:before,
+div.language-SQL.highlight > pre:before {
+  content: 'SQL';
+}
+
+div.language-sqlite.highlight > pre:before,
+div.language-SQLite.highlight > pre:before {
+  content: 'SQLite';
+}
+
+div.language-stylus.highlight > pre:before,
+div.language-Stylus.highlight > pre:before {
+  content: 'Stylus';
+}
+
+div.language-swift.highlight > pre:before,
+div.language-Swift.highlight > pre:before {
+  content: 'Swift';
+}
+
+
+/* —————————————————————————————————————————————————————————T————————————————————————————————————————————————————————— */
+div.language-tcl.highlight > pre:before,
+div.language-TCL.highlight > pre:before {
+  content: 'TCL';
+}
+
+div.language-tex.highlight > pre:before,
+div.language-TeX.highlight > pre:before {
+  content: 'TeX';
+}
+
+div.language-tiddlywiki.highlight > pre:before,
+div.language-TiddlyWiki.highlight > pre:before {
+  content: 'TiddlyWiki';
+}
+
+div.language-tiki wiki.highlight > pre:before,
+div.language-Tikiwiki.highlight > pre:before {
+  content: 'Tikiwiki';
+}
+
+div.language-toml.highlight > pre:before,
+div.language-TOML.highlight > pre:before {
+  content: 'TOML';
+}
+
+div.language-tsx.highlight > pre:before,
+div.language-TSX.highlight > pre:before {
+  content: 'TSX';
+}
+
+div.language-turtle.highlight > pre:before,
+div.language-Turtle.highlight > pre:before {
+  content: 'Turtle';
+}
+
+div.language-twig.highlight > pre:before,
+div.language-Twig.highlight > pre:before {
+  content: 'Twig';
+}
+
+div.language-TypeScript.highlight > pre:before,
+div.language-typescript.highlight > pre:before,
+div.language-ts.highlight > pre:before,
+div.language-TS.highlight > pre:before {
+  content: 'TypeScript';
+}
+
+
+/* —————————————————————————————————————————————————————————U————————————————————————————————————————————————————————— */
+
+
+/* —————————————————————————————————————————————————————————V————————————————————————————————————————————————————————— */
+div.language-V.highlight > pre:before,
+div.language-v.highlight > pre:before {
+  content: 'V';
+}
+
+div.language-vb.highlight > pre:before,
+div.language-VB.highlight > pre:before {
+  content: 'VB';
+}
+
+div.language-VBScript.highlight > pre:before,
+div.language-vbscript.highlight > pre:before {
+  content: 'VBScript';
+}
+
+div.language-velocity.highlight > pre:before,
+div.language-Velocity.highlight > pre:before {
+  content: 'Velocity';
+}
+
+div.language-verilog.highlight > pre:before,
+div.language-Verilog.highlight > pre:before {
+  content: 'Verilog';
+}
+
+div.language-vhdl.highlight > pre:before,
+div.language-VHDL.highlight > pre:before {
+  content: 'VHDL';
+}
+
+div.language-visual basic.highlight > pre:before,
+div.language-Visual Basic.highlight > pre:before {
+  content: 'Visual Basic';
+}
+
+div.language-vue.highlight > pre:before,
+div.language-Vue.highlight > pre:before {
+  content: 'Vue';
+}
+
+
+/* —————————————————————————————————————————————————————————W————————————————————————————————————————————————————————— */
+div.language-web-idl.highlight > pre:before,
+div.language-Web IDL.highlight > pre:before {
+  content: 'Web IDL';
+}
+
+div.language-wiki.highlight > pre:before,
+div.language-Wiki.highlight > pre:before {
+  content: 'Wiki';
+}
+
+
+/* —————————————————————————————————————————————————————————X————————————————————————————————————————————————————————— */
+div.language-xaml.highlight > pre:before,
+div.language-XAML.highlight > pre:before {
+  content: 'XAML';
+}
+
+div.language-xml.highlight > pre:before,
+div.language-XML.highlight > pre:before {
+  content: 'XML';
+}
+
+div.language-xml-dtd.highlight > pre:before,
+div.language-XML DTD.highlight > pre:before {
+  content: 'XML DTD';
+}
+
+div.language-xquery.highlight > pre:before,
+div.language-XQuery.highlight > pre:before {
+  content: 'XQuery';
+}
+
+
+/* —————————————————————————————————————————————————————————Y————————————————————————————————————————————————————————— */
+div.language-yacas.highlight > pre:before,
+div.language-Yacas.highlight > pre:before {
+  content: 'Yacas';
+}
+
+div.language-yaml.highlight > pre:before,
+div.language-YAML.highlight > pre:before {
+  content: 'YAML';
+}
+
+
+/* —————————————————————————————————————————————————————————Z————————————————————————————————————————————————————————— */
+
+
+

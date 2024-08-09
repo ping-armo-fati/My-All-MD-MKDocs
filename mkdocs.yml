@@ -647,6 +647,7 @@ extra_css:
   - css/table.css
 
 extra:
+  :fontawesome-brands-qq:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com
