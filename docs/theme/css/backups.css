@@ -1,0 +1,5 @@
+/* 设置激活链接的颜色 */
+.md-nav__item--active > .md-nav__link {
+    background-color: #90e2e0!important;
+    color: inherit;
+}

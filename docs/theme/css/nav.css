@@ -11,8 +11,8 @@
     border-radius: 0.5rem;
 }
 
-.md-nav__item {
-    background-color: #F8F8F8; /*浅灰*/
+nav.md-nav.md-nav--nav__primary > .md-nav__list > .md-nav__item {
+    background-color: #F8F8F8!important; /*浅灰*/
     border-radius: 0.2rem;
 }
 
@@ -20,8 +20,3 @@
     background-color: var(--top-level-bg);
 }
 
-/* 设置激活链接的颜色 */
-.md-nav__item--active > .md-nav__link {
-    background-color: #90e2e0!important;
-    color: inherit;
-}

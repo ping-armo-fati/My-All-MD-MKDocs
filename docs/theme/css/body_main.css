@@ -75,7 +75,7 @@ h4 {
     font-weight: bold;
 }
 
-/* 正文字体大小为18，所有英文字体为等线，所有中文字体为等线 */
+
 body {
     font-size: 25px;
     background-color: #FFFFFF!important;
@@ -83,35 +83,57 @@ body {
 }
 
 
-/*段落*/
+
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'Merriweather', '等线', serif;
 }
 /*列表*/
 ul, ol {
-    font-size: 1.2rem!important;
+    font-size: 1.0rem;
 }
 
 ul ul, ol ol {
-    font-size: 1rem!important;
+    font-size: 0.9rem;
 }
 
 ul ul ul, ol ol ol {
-    font-size: 0.8rem!important;
+    font-size: 0.7rem;
 }
 
 ul ul ul ul, ol ol ol ol {
-    font-size: 0.6rem!important;
+    font-size: 0.6rem;
 }
 
 /* 区块引用：英文：手写体 中文：楷体 */
 blockquote {
     font-family: 'Comic Sans MS', '楷体', cursive!important;
-    background-color: #ffffcc!important;
+    background-color: #ffffe0!important;
     overflow-x:auto;
+    margin-left: 3.2rem!important;
+    margin-right:0.8rem!important;
+    font-size:0.7rem!important;
 }
 
 blockquote p {
     font-family: 'Comic Sans MS', '楷体', cursive!important;
+    font-size:0.9rem!important;
+
 }
+
+blockquote ul, ol {
+    font-size: 0.9rem;
+}
+
+blockquote ul ul, ol ol {
+    font-size: 0.8rem;
+}
+
+blockquote ul ul ul, ol ol ol {
+    font-size: 0.7rem;
+}
+
+blockquote ul ul ul ul, ol ol ol ol {
+    font-size: 0.6rem;
+}
+

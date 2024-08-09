@@ -1,7 +1,15 @@
+code {
+    font-family:"Cascadia code", "Courier New", monospace!important;
+    background-color: rgba(193, 226, 240, 0.5)!important;
+    border: 0.01rem solid #D3D3D3;
+	border-radius: 0.9rem!important;
+}
+
+
 pre {
     position: relative; /* 为了使伪元素相对于 pre 定位 */
     border: 1px solid #f5f5dc; /* 代码块边框 */
-    border-radius: 5px; /* 圆角 */
+    border-radius: 15px; /* 圆角 */
     margin-bottom: 20px; /* 底部间距 */
     padding-top: 2.5rem; /* 给伪元素留出空间 */
 }
@@ -9,20 +17,42 @@ pre {
 pre:before {
     content:'';
     font-family: 'Lucida calligraphy'; /* 修改字体为 Brush Script */
+    font-size:1.1rem!important;
     position: absolute; /* 绝对定位 */
     top: 0; /* 在顶部 */
     left: 0; /* 在左侧 */
     right: 0; /* 在右侧 */
     height: 2.5rem; /* 高度 */
-    background-color: #f5f5dc; /* 背景颜色 */
+    background-color: #e2f2e3; /* 背景颜色 */
     color: #8B0000; /* 字体颜色 */
     display: flex; /* 使用 flexbox 布局 */
     justify-content: space-between; /* 左右对齐 */
     align-items: center; /* 垂直居中 */
     padding: 0 1rem; /* 内边距 */
-    border-top-left-radius: 5px; /* 圆角 */
-    border-top-right-radius: 5px; /* 圆角 */
+    border-top-left-radius: 1.2rem; /* 圆角 */
+    border-top-right-radius: 1.2rem; /* 圆角 */
     border-bottom: 1px solid #ddd; /* 边框底部 */
+}
+
+pre code {
+
+	display: block!important;
+
+    background-color: rgba(193, 226, 240, 0.5)!important;
+    position:relative!important;
+	line-height: 1.8rem;
+	font-size: 0.9rem!important;
+	font-weight: 380!important;
+	border-radius: 0.2rem!important;
+    font-family:"Cascadia code", "Courier New", monospace!important;
+    padding: 0rem 0.2rem!important;
+
+
+    white-space: pre;
+    overflow-x: auto;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1) 50%);
+    background-size: 100% 3.6rem; /* 调整为行高的两倍 */
+
 }
 
 .language-label {
@@ -37,6 +67,7 @@ pre:before {
     color: transparent; /* 图标颜色 */
     opacity: 0.2; /* 默认不显眼 */
     transition: background-color 0.3s, opacity 0.3s; /* 过渡效果 */
+
 }
 
 .copy-button:hover {
@@ -53,6 +84,7 @@ pre:before {
     padding: 10px;
     border-radius: 10px;
     z-index: 1000; /* 确保在最上层 */
+    font-size: 0.7rem;
 }
 
 

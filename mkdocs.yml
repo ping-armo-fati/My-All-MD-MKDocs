@@ -578,27 +578,28 @@ nav:
 
 
 repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
+repo_name: ypq
 
 theme:
   name: material
-  logo: css/shido.jpg
-  favicon: css/shido.jpg
+  logo: theme/ico/shido.jpg
+  favicon: theme/ico/shido.jpg
 
-  feature:
+  features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.tracking
     - navigation.path
+    - navigation.top
     - toc.follow
     - navigation.footer
-    - navigation.indexes
-    - navigation.sticky
-    - content.code.annotation
     - content.code.copy
+    - content.code.annotation
     - content.tabs.link
     - content.code.select
+    - header.autohide
 
 
 
@@ -607,17 +608,7 @@ theme:
     - scheme: default
       primary: teal
       accent: pink
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: orange
-      accent: pink
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -641,19 +632,21 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
-  - css/body_main.css
-  - css/code.css
-  - css/nav.css
-  - css/table.css
+  - theme/css/body_main.css
+  - theme/css/code.css
+  - theme/css/nav.css
+  - theme/css/table.css
+
 
 extra:
-  :fontawesome-brands-qq:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com
 
+
 extra_javascript:
-  - css/js/extra.js
+  - theme/js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 
 
