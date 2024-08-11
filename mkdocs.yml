@@ -612,7 +612,9 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences
-
+  - pymdownx.tabbed:
+      alternate_style: true
+      
   - admonition
   - pymdownx.arithmatex:
       generic: true
