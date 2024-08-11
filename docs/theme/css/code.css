@@ -65,7 +65,7 @@ div.highlight > table.highlighttable:before {
     display: block!important; /* 使用 flexbox 布局 */
     justify-content: space-between; /* 左右对齐 */
     align-items: center; /* 垂直居中 */
-    padding: 0.2rem 3rem; /* 内边距 */
+    padding: 0.2rem 1.8rem; /* 内边距 */
     border-top-left-radius: 0.9rem; /* 圆角 */
     border-top-right-radius: 0.9rem; /* 圆角 */
     border-bottom: 1px solid #ddd; /* 边框底部 */
