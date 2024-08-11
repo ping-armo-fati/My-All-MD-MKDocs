@@ -612,11 +612,7 @@ theme:
 
 markdown_extensions:
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+      linenums: true
   - pymdownx.superfences
 
   - admonition
@@ -624,12 +620,8 @@ markdown_extensions:
       generic: true
   - footnotes
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - theme/css/body_main.css
@@ -647,6 +639,5 @@ extra:
 extra_javascript:
   - theme/js/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
 
 

@@ -14,7 +14,7 @@ table {
 
 /* 表格单元格和表头的通用样式 */
 table td, table th {
-    border: 1px solid transparent; /* 边框为1像素，颜色透明 */
+    border: 0px solid transparent; /* 边框为1像素，颜色透明 */
     color: rgb(18, 18, 18); /* 文字颜色 */
     height: 1.4rem; /* 高度为30px */
     padding: 0.5rem; /* 内边距为10px */
