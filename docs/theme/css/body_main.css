@@ -1,6 +1,11 @@
 html{
     font-size: 25px!important; /* 将根字体大小设置为20px */
 }
+
+.md-gird{
+    max-width:72rem;
+}
+
 /* 定义颜色变量 */
 :root {
     --level-1-bg: #55739f;

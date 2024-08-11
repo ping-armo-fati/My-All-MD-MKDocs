@@ -2,7 +2,7 @@ code {
     font-family:"Cascadia code", "Courier New", monospace!important;
     background-color: rgba(193, 226, 240, 0.5)!important;
     border: 0.01rem solid #D3D3D3;
-	border-radius: 0.9rem;
+	border-radius: 0.9rem!important;
 }
 
 div.highlight {
@@ -43,14 +43,11 @@ div.highlight > table.highlighttable {
     margin-bottom: 20px; /* 底部间距 */
     padding-top: 2.4rem; /* 给伪元素留出空间 */
     display:flow-root!important;
-    height: auto!important;
-    max-height: none!important; /* 确保没有最大高度限制 */
     line-height:1.8rem!important;
-
 }
 
 div.highlight > table.highlighttable:before {
-    content:'python';
+    content:'Code';
     text-align:left!important;
     font-family: 'Lucida calligraphy'; /* 修改字体为 Brush Script */
     font-size: 1.2rem!important;

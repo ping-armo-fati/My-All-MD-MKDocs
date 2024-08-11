@@ -1,8 +1,6 @@
 site_name: MarkDown Notes PQ
 
 nav:
-  - Home: 'Home.md'
-  - Index: 'index.md'
   - Bullet:
     - '0.Bullet/index.md'
     - Lifestyle:
@@ -578,7 +576,7 @@ nav:
 
 
 repo_url: https://github.com/ping-armo-fati/My-All-MD-MKDocs.git
-repo_name: ypq
+repo_name: git
 
 theme:
   name: material
@@ -588,12 +586,12 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.indexes
     - navigation.tracking
     - navigation.path
     - navigation.top
     - toc.follow
+    - toc.integrate
     - navigation.footer
     - content.code.copy
     - content.code.annotation
