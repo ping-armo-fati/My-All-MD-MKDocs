@@ -622,6 +622,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.mark
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - theme/css/body_main.css
@@ -632,8 +635,14 @@ extra_css:
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: simple/github
       link: https://github.com
+    - icon: simple/gitee
+      link: https://gitee.com
+    - icon: simple/tencentqq
+      link: https://mail.qq.com
+    - icon: material/email
+      link: https://mail.tongji.edu.cn/
 
 
 extra_javascript:
