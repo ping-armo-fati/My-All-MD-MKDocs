@@ -45,7 +45,6 @@ div.highlight > table.highlighttable {
     display:flow-root!important;
     height: auto!important;
     max-height: none!important; /* 确保没有最大高度限制 */
-    overflow-y: auto!important;
     line-height:1.8rem!important;
 
 }
