@@ -78,7 +78,7 @@ h3::after {
 h4 {
     position: relative;
     font-style: italic!important;
-    font-size: 1.2rem!important;
+    font-size: 1.2em!important;
     font-weight: bold;
 }
 
