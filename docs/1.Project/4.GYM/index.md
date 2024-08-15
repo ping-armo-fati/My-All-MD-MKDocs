@@ -8,7 +8,7 @@
   - [搭载环境](4.搭载环境.md)
   - [isaac](5.isaac.md)
   - [gym-mujoco](6.gym-mujoco.md)
-  - [gym-env-mujoco-stable_baselines_3](7.gym-env-mujoco-stable_baselines_3.md)
+  - [gym-env-mujoco-sb3](7.gym-env-mujoco-sb3.md)
   - [ide安装学习](8.ide安装学习.md)
   - [custom-env](9.custom-env.md)
 ****

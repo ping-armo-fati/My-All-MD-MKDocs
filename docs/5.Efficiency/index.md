@@ -1,7 +1,7 @@
 # Content Of Efficiency
 ****
 ****
-  - [file management](file management/index.md)
-  - [Software management](Software management/index.md)
-  - [Mission-func](Mission-func/index.md)
+  - [file management](0.file management/index.md)
+  - [Software management](1.Software management/index.md)
+  - [Mission-func](2.Mission-func/index.md)
 ****
