@@ -7,7 +7,6 @@ code {
 
 div.highlight {
     height:auto!important;
-
     display:block!important;
 }
 
@@ -82,7 +81,7 @@ td.code > div > pre > code {
     text-align:left!important;
     white-space: pre;
     overflow-x: auto;
-    overflow-y: none!important;
+    overflow-y: hidden;
     background-image: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1) 50%);
     background-size: 100% 3.6rem; /* 调整为行高的两倍 */
 }
