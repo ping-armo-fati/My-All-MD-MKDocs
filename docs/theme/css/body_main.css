@@ -28,12 +28,13 @@ html{
 
 /* 所有标题字体颜色为高级蓝灰色，字体为等线 */
 h1, h2, h3, h4 {
-    color: var(--advanced-blue-gray);
+    color: var(--advanced-blue-gray)!important;
     font-family: 'PingFang SC','等线', serif;
     font-weight: bold!important;
 }
 
 h1 {
+    position: relative;
     text-align: center;
     font-size: 2.8rem!important;
     font-weight: bold!important;
@@ -42,9 +43,10 @@ h1 {
 
 /* 二级标题靠左，蓝灰色底纹，白色字体 */
 h2 {
+    position: relative;
     text-align: left;
     background-color: var(--advanced-blue-gray);
-    color: white;
+    color: white!important;
     font-size: 1.8rem!important;
     display: block;
     padding: 16px;
@@ -62,7 +64,7 @@ h3 {
     position: relative;
 }
 
-h3::before {
+h3::after {
     content: "";
     position: absolute;
     left: 0;
@@ -74,10 +76,55 @@ h3::before {
 
 /* 四级标题字体为斜体，浅橙色，字体大小为26 */
 h4 {
+    position: relative;
     font-style: italic!important;
-    color: white!important;
-    font-size: 1.4rem!important;
+    font-size: 1.2rem!important;
     font-weight: bold;
+}
+
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  vertical-align: top;
+  position: absolute;
+  right: calc(100% + 0.6rem);
+  top:-2rem;
+  color: #e07a5f !important;
+  font-weight: bolder !important;
+  border: 0;
+  border-radius: 0;
+  left: auto;
+  float: left;
+  padding: 0;
+  font-family: 'HarmonyOS';
+  font-size: 1.1rem !important;
+}
+
+h2::before {
+  content: '#2';
+  top: -10px;
+}
+
+h3::before {
+  content: '#3';
+  top: -5px;
+}
+
+h4::before {
+  content: '#4';
+  top: -5px;
+}
+
+h5::before {
+  content: '#5';
+  top: -5px;
+}
+
+h6::before {
+  content: '#6';
+  top: -5px;
 }
 
 
